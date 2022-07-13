@@ -1,0 +1,307 @@
+@import url('https://fonts.googleapis.com/css2?family=Kdam+Thmor+Pro&display=swap');
+@font-face {
+    font-family: pricedown bl;
+    src: url(./Fonts/pricedown\ bl.otf);
+}
+
+@font-face {
+    font-family: rock-it;
+    src: url(./Fonts/Rockit.ttf);
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/*Root variable color for our dark theme toggler*/
+:root {
+    --main-bg: rgb(151, 147, 147);
+    --main-text: rgb(240, 225, 17);
+}
+
+[data-theme="dark"] {
+    --main-bg: #212529;
+    --main-text: rgb(11, 219, 28);
+}
+body{
+    min-height: 150vh;
+    background-color: var(--main-bg);
+    background-image: url("./assets/1255561.jpg"), linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5));
+    background-blend-mode: multiply;
+}
+
+body::before{
+    display: block;
+    content: '';
+    height: 6rem;
+}
+
+/*CSS styling for the Introduction section*/
+#intro{
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    opacity: 0.8;
+    background: linear-gradient(#4e4e52, #223834);
+    background-size: cover;
+    background-attachment: fixed;
+    clip-path: circle(180vh at 50% -80%);
+    padding-top: 2rem;
+}
+
+#content{
+    max-width: 1000px;
+    text-align: center;
+}
+
+
+#intro h1{
+    font-family: 'pricedown bl';
+}
+
+/*The hovering into the whole background inside the container of introduction section,
+specifically from color background: linear-gradient(#191654, #43C6AC); to
+background: linear-gradient(rgb(62, 63, 61), rgb(21, 22, 21));*/
+#intro::before{
+    transform: scaleX(0);
+    transform-origin: bottom right;
+}
+
+#intro:hover::before{
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+
+#intro:before{
+    content: " ";
+    display: block;
+    position: absolute;
+    top: 0; right: 0; bottom: 0; left: 0;
+    inset: 0 0 0 0;
+    background: linear-gradient(rgb(62, 63, 61), rgb(21, 22, 21));
+    z-index: -1;
+    transition: transform .7s ease;
+}
+/*Hovering of intro background ends*/
+
+/*Styling for the paragraph inside introduction section*/
+#intro-paragraph{
+    font-weight: 400;
+    font-size: 1.0rem;
+}
+
+#image-intro{
+    height: 500px;
+    margin-left: 10rem;
+}
+
+/*For the Button, specifically the 'Visit Now' button.*/
+#callNow{
+    font-weight: 600;
+    transition: 0.3s ease-in;
+}
+#callNow:hover{
+    color: #000;
+    background: #087504;
+}
+
+/*For social media links styling.*/
+.social-link{
+    color: rgb(39, 38, 38);
+    transition: 0.5s ease-in-out;
+}
+.social-link:hover{
+    color: wheat;
+}
+
+/*Targets the navigational links to hover an underline beneath each webpages.*/
+#navbarNav ul li{
+    display: inline-block;
+    position: relative;
+    color: rgb(62, 151, 2);
+}
+
+#navbarNav ul li a:after{
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 3px;
+    bottom: 0;
+    left: 0;
+    background-color: rgb(62, 151, 2);
+    transform-origin: bottom right;
+    transition: 0.8s ease-in-out;
+}
+
+#navbarNav ul li a:hover{
+    color: #0caf3d;
+    transform: scale3d(1.1, 1.1, 1.1);
+    transition: 0.5s ease-in;
+}
+
+#navbarNav ul li a:hover:after{
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+
+/**Targets the navigational links to hover an underline beneath each webpages. ENDS*/
+
+/*Line 100 for the Card Section in HTML*/
+/*It is the code the title for the card section*/
+#text-title h4{
+    position: relative;
+    display: inline;
+    padding-bottom: 5px;
+}
+#text-title h4:after{
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(1);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #0caf3d;
+    transform-origin: bottom right;
+}
+
+#values{
+    color: var(--main-text);
+}
+
+/*Each hover will transform the translateY of the cards*/
+#card-card{
+    width: 100%;
+    position: relative;
+    transition: 0.1s linear;
+}
+
+#card-card:hover{
+    transform: translateY(10px);
+}
+
+/*This code is for the body of the card in Bootstrap, to hover their background color into
+  a specified color gradient.*/
+#cardBody{
+    width: 100%;
+    position: relative;
+    background: linear-gradient(#313638, #1e5e5e);
+    opacity: 0.5;
+    transition: all 1s ease-in-out;
+}
+
+#cardBody:hover{
+    color: beige;
+    opacity: 1;
+}
+
+/*Card Background hovering styling ENDS*/
+
+/*About us styling STARTS*/
+
+#about-us h2{
+    font-family: 'Kdam Thmor Pro', sans-serif;
+    font-size: 5rem;
+}
+
+#about-us p{
+    font-family: 'Kdam Thmor Pro', sans-serif;
+}
+
+/*About us styling ENDS*/
+
+/*Card image in Services scaling*/
+#text-services h4{
+    position: relative;
+    display: inline;
+    color: var(--main-text);
+}
+
+#text-services h4:after{
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(1);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #0caf3d;
+    transform-origin: bottom right;
+}
+
+#column-card{
+    overflow: hidden;
+    position: relative;
+}
+
+#service-img-card{
+    position: relative;
+    width: 100%;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    transition: 0.1s linear;
+}
+#service-img-card:hover{
+    transform: scale(1.1);
+}
+
+#form-shadow{
+    color: #1d806c;
+    font-weight: 600;
+}
+#form-shadow input,
+#form-shadow textarea{
+    position: relative;
+    font-weight: 600;
+    color: green;
+}
+
+#contact-submit{
+    font-weight: 500;
+    transition: 0.5s ease-in;
+}
+
+#contact-submit:hover{
+    background-color: #6e706c;
+    color: whitesmoke;
+}
+
+
+#useful-links p a{
+    position: relative;
+    transition: 0.5s linear;
+}
+
+#useful-links p a:hover{
+    text-decoration: none;
+}
+
+#footer-soc i{
+    position: relative;
+    transition: 0.5s linear;
+}
+
+#footer-soc i:hover{
+    color: rgb(221, 245, 11);
+}
+
+
+
+/* Targets paragraph and image to be responsive, go to index.html line 61, and line 70*/
+@media only screen and (min-height: 480px) and (max-width: 767px){
+    #intro-paragraph{
+        font-size: 0.7rem;
+    }
+    #image-intro{
+        height: 15rem;
+        margin-left: auto;
+    }
+
+    #toggleDay{
+        margin: 5px auto;
+    }
+}
+
+

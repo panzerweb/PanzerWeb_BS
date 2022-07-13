@@ -1,0 +1,491 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="/assets/PanzerLogo-removebg-preview.png">
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <!--Github file https://github.com/michalsnik/aos-->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <!--Github File-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css">
+    <title>PanzerWeb | Home</title>
+</head>
+<body>
+<!--Navigational Brand starts-->
+    <nav class="navbar navbar-expand-lg bg-dark navbar-dark fixed-top">
+        <div class="container-lg" data-aos="fade-left"  data-aos-duration="1000" data-aos-once="true">
+                <a href="index.html" class="navbar-brand">
+                    <img src="./assets/PanzerLogo-removebg-preview.png" style="width: 6rem;"
+                    alt="" class="d-inline-block align-text-top" >
+                </a>
+                <!--This code is the responsive toggling button for mobile devices or the 3 lines navigational button.-->
+                <button class="btn btn-success navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+<!--Navigational brand ends-->
+
+<!--Navigational links start here-->
+           <div class="collapse navbar-collapse" id="navbarNav"  data-aos="fade-left"  data-aos-duration="1000"
+           data-aos-once="true" data-aos-delay="50">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item mx-auto">
+                        <a href="#servicelink" class="nav-link fw-bold">Services</a>
+                    </li>
+                    <li class="nav-item mx-auto">
+                        <a href="./portfolio.html" class="nav-link fw-bold">Portfolio</a>
+                    </li>
+                    <li class="nav-item mx-auto">
+                        <a href="#contact" class="nav-link fw-bold">Contact</a>
+                    </li>
+                    <li class="nav-item mx-auto">
+                        <a href="#aboutus" class="nav-link fw-bold">About Us</a>
+                    </li>
+
+                <button id="toggleDay" class="btn btn-warning mx-2 " onclick="toggleTheme()">
+                    <i class="bi bi-brightness-high-fill" id="icon"></i>
+                </button>
+                    <!--This form is the code for the search engine form in the website's header.-->
+                    <form class="d-flex" role="search">
+                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-outline-success" type="submit">Search</button>
+                      </form>
+                </ul>
+           </div>
+<!--Navigational Links Ends here-->
+        </div>
+    </nav>
+
+    <!--INTRODUCTION SECTION-->
+    <section id="intro">
+        <div class="container-lg" id="content" data-aos="fade-up-right" data-aos-duration="1000">
+            <div class="row justify-content-center align-items-center">
+                <div class="col-md-5 text-center text-md-start">
+                    <h1 id="headTitle">
+                        <div class="display-1 text-light" id="PanzerHead" 
+                        data-aos="slide-right" data-aos-duration="2000" data-aos-delay="10" 
+                        id="head-title">PANZERWEB</div>
+                        <div class="display-4 text-info text-center" id="trusted-text" data-aos="slide-right" data-aos-duration="1500" data-aos-delay="100">Your trusted coder ever!</div>
+                    </h1>
+                    <p class="lead text-light" id="intro-paragraph" data-aos="slide-right" data-aos-duration="1000" data-aos-delay="30"
+                    data-aos-once="true">
+                        Front-End Web Developer located at Panabo City,
+                        Davao Del Norte, Philippines.
+                    </p>
+                    <a href="https://selwynvillar.wixsite.com/selwynport" target="_blank" role="button" 
+                    class="btn btn-primary rounded-pill" id="callNow" data-aos="flip-up" 
+                    data-aos-duration="2000" data-aos-delay="2000" data-aos-once="true">Visit Now!</a>
+
+                </div>
+                
+                <div class="col-md-5 text-center d-sm-block d-md-block" data-aos="slide-up" data-aos-duration="2000" data-aos-delay="100">
+                    <img src="./profile/Phone_Case_auto_x2.png" alt="" class="img-fluid" id="image-intro" style="z-index: 3;">
+                                   
+                </div>
+<!--SOCIAL MEDIA LINKS STARTS HERE-->
+                <div class="col-md-5 text-center" data-aos="slide-right">
+                    <a href="#" class="social-link p-3">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-facebook" viewBox="0 0 16 16">
+                            <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z"/>
+                          </svg>
+                    </a>
+                    <a href="#" class="social-link p-3">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-instagram" viewBox="0 0 16 16">
+                            <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z"/>
+                          </svg>
+                    </a>
+                    <a href="#" class="social-link p-3">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-tiktok" viewBox="0 0 16 16">
+                            <path d="M9 0h1.98c.144.715.54 1.617 1.235 2.512C12.895 3.389 13.797 4 15 4v2c-1.753 0-3.07-.814-4-1.829V11a5 5 0 1 1-5-5v2a3 3 0 1 0 3 3V0Z"/>
+                          </svg>
+                    </a>
+                </div>
+<!--SOCIAL MEDIA LINKS ENDS-->
+            </div>
+        </div>
+    </section>
+<!--INTRODUCTION SECTION ENDS-->
+
+
+
+<!--CARD SECTION STARTS-->
+    <section id="values" class="my-5 py-3">
+        <div class="container-lg">
+                <div class="text-center" id="text-title">
+                    <h4 class="h1" style=" font-family: 'Kdam Thmor Pro', sans-serif;
+                    ">Why Chose Panzer?</h4>
+                    <p class="lead my-3" style=" font-family: 'Kdam Thmor Pro', sans-serif;
+                    ">Become the best developer you can ever be with Panzer.</p>
+                </div>
+
+                <!--Row and Columns for the cards specified for small to xxl screens-->
+                <div class="row align-items justify-content-center">    
+                    <div class="col-sm-9 my-3 col-lg-4 col-xxl-3" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="50" data-aos-once="true">
+                        <div class="card" id="card-card" style="background: url(./assets/Cards/Quality-learning.jpg) center; background-size: cover;">
+                            <h4 class="card-header bg-dark text-light text-center">PANZERWEB</h4>
+                            <div class="card-body text-center py-4" id="cardBody">
+                                <h5 class="card-title fw-bold">Quality Learning</h5>
+                                <p class="card-subtitle py-3">Learn quality web development topics and incorporate yourself
+                                    into a more sophisticated roadmap of Front-End Web development.
+                                </p>
+                                <a href="#" class="btn btn-outline-success">Learn More</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-9 my-3 col-lg-4 col-xxl-3" data-aos="fade-down" data-aos-duration="1500" data-aos-delay="50" data-aos-once="true">
+                        <div class="card" id="card-card" style="background: url(./assets/Cards/shaking-hands1.jpg) center; background-size:cover;">
+                            <h4 class="card-header bg-dark text-light text-center">PANZERWEB</h4>
+                            <div class="card-body text-center py-4" id="cardBody">
+                                <h5 class="card-title fw-bold">Trustworthy</h5>
+                                <p class="card-subtitle py-3">Panzer came from a humble beginning in the world of
+                                    coding, thus ensuring everyone will be able to trust him as he grows forward.
+                                </p>
+                                <a href="#" class="btn btn-outline-success">Learn More</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-9 my-3 col-lg-4 col-xxl-3" data-aos="fade-left" data-aos-duration="2000" data-aos-delay="50" data-aos-once="true">
+                        <div class="card" id="card-card" style="background: url(./assets/Cards/Approachable.jpg) center; background-size:cover;">
+                            <h4 class="card-header bg-dark text-light text-center">PANZERWEB</h4>
+                            <div class="card-body text-center py-4" id="cardBody">
+                                <h5 class="card-title fw-bold">Approachable</h5>
+                                <p class="card-subtitle py-3">Being able to help everyone is what Panzer
+                                    will always offer to each and everyone who are willing to learn.
+                                </p>
+                                <a href="#" class="btn btn-outline-success">Learn More</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-9 my-3 col-lg-4 col-xxl-3" data-aos="fade-right" data-aos-duration="2500" data-aos-delay="50" data-aos-once="true">
+                        <div class="card" id="card-card" style="background: url(./assets/Cards/UP-TO-DATE.jpg) center; background-size:cover;">
+                            <h4 class="card-header bg-dark text-light text-center">PANZERWEB</h4>
+                            <div class="card-body text-center py-4" id="cardBody">
+                                <h5 class="card-title fw-bold">Up-To-Date Developer</h5>
+                                <p class="card-subtitle py-3">Being updated to the latest trend of the coding world;
+                                    HTML5, CSS3, ES6, Bootstrap5, and other Front-End Components.
+                                </p>
+                                <a href="#" class="btn btn-outline-success">Learn More</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-9 my-3 col-lg-4 col-xxl-3" data-aos="fade-up" data-aos-duration="3000" data-aos-delay="50" data-aos-once="true">
+                        <div class="card" id="card-card" style="background:url(./assets/Cards/Optimist.jpg) center; background-size:cover;">
+                            <h4 class="card-header bg-dark text-light text-center">PANZERWEB</h4>
+                            <div class="card-body text-center py-4" id="cardBody">
+                                <h5 class="card-title fw-bold">Optimistic</h5>
+                                <p class="card-subtitle py-3">Able to see the positive factors despite failing;
+                                    Panzer never backs down and always sees risk as an opportunity.
+                                </p>
+                                <a href="#" class="btn btn-outline-success">Learn More</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-9 my-3 col-lg-4 col-xxl-3" data-aos="fade-left" data-aos-duration="3000" data-aos-delay="50" data-aos-once="true">
+                        <div class="card" id="card-card" style="background:url(./assets/Cards/OPENMINDED.jpg) center; background-size:cover;">
+                            <h4 class="card-header bg-dark text-light text-center">PANZERWEB</h4>
+                            <div class="card-body text-center py-4" id="cardBody">
+                                <h5 class="card-title fw-bold">Open-Minded</h5>
+                                <p class="card-subtitle py-3">A quality coder does not only learns and shows his success 
+                                    but also learns and improvised himself from others.
+                                </p>
+                                <a href="#" class="btn btn-outline-success">Learn More</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    
+                </div>
+        </div>
+    </section>
+<!--CARD SECTION ENDS-->
+
+<br id="aboutus">
+<br>
+<br>
+
+
+<!--About Us section page STARTS-->
+    <section id="about-us" class="page-section bg-dark mt-5 mb-0">
+        <div class="container-lg" data-aos="slide-right" data-aos-duration="2000" data-aos-delay="20" 
+        data-aos-once="true">
+            <h2 class="page-section-heading text-center text-uppercase text-white pt-3">ABOUT</h2>
+                <div class="divider-custom divider-light">
+                    <div class="divider-custom-icon text-center my-4">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-star-fill" style="color:rgb(9, 250, 9);" viewBox="0 0 16 16">
+                            <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+                          </svg>
+                    </div>
+                </div>
+
+            <div class="row d-flex justify-content-center align-items-center">
+                <div class="col-lg-4 ms-auto" data-aos="slide-right" data-aos-duration="3000" data-aos-delay="50"
+                data-aos-once="true">
+                    <p class="lead text-light">
+                        PanzerWeb is a website created by Panzerweb, it is his official website open to
+                        public. This website aims to help and provide aspiring coders and programmers
+                        to be the best in their fields in the world of technology. Here you can learn more
+                        about Panzer and will help you decide to contact him for help.
+                    </p>
+                </div>
+                <div class="col-lg-4 me-auto"  data-aos="slide-right" data-aos-duration="3500" data-aos-delay="10"
+                data-aos-once="true">
+                    <p class="lead text-success">
+                        The website does not offer the topics directly, kindly message Panzer in the 
+                        contact form and send your message into his email, or contact his Phone number.
+                        HTML, CSS, JavaScript, Bootstrap5, and React are the top offers.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+<!--About us section ENDS-->
+
+<br id="servicelink" class="mt-5">
+<br>
+<br>
+<br>
+
+<!--Services Section STARTS-->
+    <section id="service" class="pt-0 mt-5">
+        <div class="container" data-aos="fade-down" data-aos-duration="2000" data-aos-delay="0" data-aos-once="true">
+            <div class="section-header text-center" id="text-services">
+                <h4 class="h1" style=" font-family: 'Kdam Thmor Pro', sans-serif;
+                    ">Our Services</h4>
+            </div>
+
+            <div class="row justify-content-center align-items-center my-5 gy-3">
+                <div class="col-md-4 col-lg-4" id="column-card">
+                    <div class="card pt-4">
+                        <div class="card-img mx-auto" style="width: 10rem;" id="service-img-card">
+                            <img src="./assets/Service/1200px-HTML5_logo_and_wordmark.svg.png" alt="" class="img-fluid">
+                        </div>
+
+                        <div class="card-body text-center py-4">
+                            <h5 class="card-title fw-bold">HTML5</h5>
+                            <p class="card-subtitle py-3">Learning HTML5 from its very basics and fundamentals
+                                to complex syntaxes that is ready for you! You will learn about the bone framework of the 
+                                website in just a single course.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-lg-4" id="column-card">
+                    <div class="card pt-4">
+                        <div class="card-img mx-auto" style="width: 7rem;" id="service-img-card">
+                            <img src="./assets/Service/CSS3_logo_and_wordmark.svg.png" alt="" class="img-fluid">
+                        </div>
+
+                        <div class="card-body text-center py-4">
+                            <h5 class="card-title fw-bold">CSS3</h5>
+                            <p class="card-subtitle py-3">
+                                CSS3 is the greatest styling for all websites, learn about this for 
+                                a single course and make yourself one of the greatest 
+                                web designer of all time. PanzerWeb offers it for an affordable cost.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-lg-4" id="column-card">
+                    <div class="card pt-4">
+                        <div class="card-img mx-auto" style="width: 17.4rem;" id="service-img-card">
+                            <img src="./assets/Service/javascript-logo-transparent-logo-javascript-images-3.png" alt="" class="img-fluid">
+                        </div>
+
+                        <div class="card-body text-center py-4">
+                            <h5 class="card-title fw-bold">JavaScript</h5>
+                            <p class="card-subtitle py-3">
+                                JavaScript, often abbreviated JS, is a programming language
+                                that is one of the core technologies of the World Wide Web, alongside HTML and CSS.
+                                Here in PanzerWeb, you can learn it for a single course.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-lg-4" id="column-card">
+                    <div class="card pt-4">
+                        <div class="card-img mx-auto" style="width: 19rem;" id="service-img-card">
+                            <img src="./assets/Service/Bootstrap.png" alt="" class="img-fluid">
+                        </div>
+
+                        <div class="card-body text-center py-4">
+                            <h5 class="card-title fw-bold">Bootstrap</h5>
+                            <p class="card-subtitle py-3">Bootstrap is a powerful, feature-packed frontend toolkit.
+                                 Build anything—from prototype to production—in minutes. Learn now for a single course.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-lg-4" id="column-card">
+                    <div class="card pt-4">
+                        <div class="card-img mx-auto" style="width: 11.5rem;" id="service-img-card">
+                            <img src="./assets/Service/figma-logo_brandlogos.net_6n1pb.png" alt="" class="img-fluid">
+                        </div>
+
+                        <div class="card-body text-center py-4">
+                            <h5 class="card-title fw-bold">Figma</h5>
+                            <p class="card-subtitle py-3">Figma is a vector graphics editor and prototyping tool which is primarily web-based, with additional
+                                 offline features enabled by desktop applications for macOS and Windows.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-lg-4" id="column-card">
+                    <div class="card pt-4">
+                        <div class="card-img mx-auto" style="width: 17.5rem;" id="service-img-card">
+                            <img src="./assets/Service/Adobe-Photoshop-Logo.png" alt="" class="img-fluid">
+                        </div>
+
+                        <div class="card-body text-center py-4">
+                            <h5 class="card-title fw-bold">Adobe Photoshop</h5>
+                            <p class="card-subtitle py-3">Adobe Photoshop is a raster graphics editor developed and published by Adobe Inc. for Windows and macOS. It was originally created in 1988 by Thomas and John Knoll. Since then, the software has become the 
+                                industry standard not only in raster graphics editing.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+<!--Services Section ENDS-->
+
+<br id="contact" class="mt-5">
+<br>
+<br>
+<br>
+
+<!--CONTACT FORM-->
+    <section class="bg-info my-5 py-5" style="opacity: 0.7;">
+            <div class="container-fluid">
+                <div class="row justify-content-evenly align-items-center">
+
+                   <div class="col-md-5 col-lg-6 mt-3">
+                        <div class="contact-pic">
+                            <img src="./profile/CONTACT.png" alt="" class="d-lg-block d-none"
+                             >
+                        </div>
+                   </div>
+                   <div class="col-md-5 col-lg-4 text-center">
+                    <form class="contact-form validate-form">
+                        <span class="contact-title">
+                            <h3 class="display-3">CONTACT US</h3></span>
+                            <div class="form-floating mb-3" id="form-shadow">
+                                <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+                                <label for="floatingInput">Email address</label>
+                              </div>
+                              <div class="form-floating" id="form-shadow">
+                                <input type="password" class="form-control" id="floatingPassword" placeholder="Password">
+                                <label for="floatingPassword">Password</label>
+                              </div>
+
+                              <div class="form-floating mt-3" id="form-shadow">
+                                <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea"
+                                rows="5" cols="50"></textarea>
+                                <label for="floatingTextarea">Message</label>
+                              </div>
+                            <button type="submit" class="btn btn-warning rounded-pill mt-3" id="contact-submit">
+                                    SUBMIT
+                                    <i class="bi bi-arrow-right" id="arrow-1"></i>                            
+                            </button>
+                            
+                    </form>
+                    </div>
+                </div>
+            </div>
+    </section>
+
+<!--Footer Section starts-->
+    <footer class="bg-dark text-light mt-5 pt-5 pb-4" data-aos="slide-right" 
+    data-aos-once="true" data-aos-duration="500" data-aos-delay="50">
+        <div class="container-lg text-center text-md-left">
+            <div class="row text-md-left">
+                <div class="col-md-4 col-lg-3 col-lg-3 mx-auto mt-3">
+                         <h5 class="text-info fw-bold mb-4">PanzerWeb</h4>
+                    <p class="lead-3">
+                        PanzerWeb is created on the 30th of June, year 2022 by Panzer.
+                        The website was created as a Portfolio as well as a site where
+                        you can contact the developer himself. Learn Web Development with Panzer.
+                    </p>
+                </div>
+                <div class="col-md-4 col-lg-2 col-lg-2 mx-auto mt-3" id="useful-links">
+                    <h5 class="text-warning fw-bold">Useful Links</h4>
+                    <p>
+                        <a href="#service" class="link-info">Service</a>
+                    </p>
+                    <p>
+                        <a href="#about-us" class="link-info">About Us</a>
+                    </p>
+                    <p>
+                        <a href="#" class="link-info">Portfolio</a>
+                    </p>
+                    <p>
+                        <a href="#" class="link-info">Terms of Service</a>
+                    </p>
+                    <p>
+                        <a href="#" class="link-info">Privacy Policy</a>
+                    </p>
+                </div>
+                <div class="col-md-4 col-lg-3 col-lg-3 mx-auto mt-3">
+                        <h5 class="text-warning mb-4">Contacts</h4>                
+                    <p>
+                        <i class="bi bi-house-door-fill mx-3">Bangoy St. Brgy San Francisco, Panabo City</i>
+                    </p>
+                    <p>
+                        <i class="bi bi-telephone mx-3">+63 09090774336</i>
+                    </p>
+                    <p>
+                        <i class="bi bi-envelope mx-3">@selwynvillar@gmail.com</i>
+                    </p>
+                    <p>
+                        <i class="bi bi-geo-alt-fill mx-3">Davao Del Norte, Philippines</i>
+                    </p>
+                </div>
+            </div>
+
+            <hr class="mb-2">
+
+                <div class="row align-items-center">
+                    <div class="col-md-7 col-lg-8">
+                        <p>Copyright &copy;<script>document.write(new Date().getFullYear());</script> All Rights Reserved</p>
+                            <a href="#" class="text-decoration-none">
+                                <strong>PanzerWeb</strong>
+                             </a>
+                    </div>
+
+                    <div class="col-md-5 col-lg-4">
+                        <ul class="list-unstyled list-inline" id="footer-soc">
+                            <li class="list-inline-item">
+                                <a href="#" class="btn-floating btn-sm text-white" style="font-size: 1.8rem;">
+                                    <i class="bi bi-facebook"></i></a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a href="#" class="btn-floating btn-sm text-white" style="font-size: 1.8rem;">
+                                    <i class="bi bi-tiktok"></i></a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a href="#" class="btn-floating btn-sm text-white" style="font-size: 1.8rem;">
+                                    <i class="bi bi-instagram"></i></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+<script src="app.js"></script>
+
+<!--Github file-->
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script>
+  AOS.init({
+    easing: 'ease-in-out'
+  });
+</script>
+    
+</script>
+</body>
+</html>

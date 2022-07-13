@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="./assets/PanzerLogo-removebg-preview.png">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link rel="stylesheet" href="port.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css">
+    <title>PanzerWeb | Portfolio</title>
+</head>
+<body> 
+    <!--Navigational Brand starts-->
+    <nav class="navbar navbar-expand-lg bg-dark navbar-dark fixed-top">
+        <div class="container-lg" data-aos="fade-left"  data-aos-duration="1000" data-aos-once="true">
+                <a href="index.html" class="navbar-brand">
+                    <img src="./assets/PanzerLogo-removebg-preview.png" style="width: 6rem;"
+                    alt="" class="d-inline-block align-text-top" >
+                </a>
+                <!--This code is the responsive toggling button for mobile devices or the 3 lines navigational button.-->
+                <button class="btn btn-success navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+<!--Navigational brand ends-->
+
+<!--Navigational links start here-->
+           <div class="collapse navbar-collapse" id="navbarNav"  data-aos="fade-left"  data-aos-duration="1000"
+           data-aos-once="true" data-aos-delay="50">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item mx-auto">
+                        <a href="#questionsec" class="nav-link fw-bold">FAQs</a>
+                    </li>
+                    <li class="nav-item mx-auto">
+                        <a href="portfolio.html" class="nav-link fw-bold">Portfolio</a>
+                    </li>
+                    <li class="nav-item mx-auto">
+                        <a href="index.html" class="nav-link fw-bold">Contact</a>
+                    </li>
+                    <li class="nav-item mx-auto">
+                        <a href="index.html" class="nav-link fw-bold">About Us</a>
+                    </li>
+
+                    <button id="toggleDay" class="btn btn-warning mx-2" onclick="toggleTheme()"
+                    >
+                    <i class="bi bi-brightness-high-fill" id="icon"></i>
+                    </button>
+                    <!--This form is the code for the search engine form in the website's header.-->
+                    <form class="d-flex" role="search">
+                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-outline-success" type="submit">Search</button>
+                      </form>
+                </ul>
+           </div>
+<!--Navigational Links Ends here-->
+        </div>
+    </nav>
+
+<!--Portfolio Website starts-->
+    <section id="portfolio" class="gallery my-5 py-5" data-aos="fade-down" data-aos-duration="1000">
+        <div class="container-fluid" id="portcontent">
+            <div class="text-center pb-5 my-5  bg-success" id="PortfolioHead">
+                <h1 class="fw-bold" style="text-decoration: underline rgb(91, 158, 4);">PORTFOLIO</h1>
+                <p class="lead fst-italic fw-bold"
+                style="text-decoration: underline rgb(142, 201, 5);">Top projects | PanzerWeb | Portfolio</p>
+
+            </div>
+
+            <br>
+            <br>
+            <br>
+
+            <p class="lead text-center" id="PortfolioParagraph">
+                Here are some of the top projects created originally by PanzerWeb,
+                this is a memento of his skills as a web developer that will surely
+                input your minds with a success. Take a look carefully with these websites.
+            </p>
+            <!--Row for portfolio and its column-->
+            <div class="row justify-content-around align-text-center gy-2 mt-5">
+          <!--FIRST PORTFOLIO-->
+                <div class="col-lg-5" data-aos="slide-right" data-aos-duration="500" data-aos-once="true">
+                    <img src="./assets/Portfolio/PorfolioSite[0].png" class="gallery-item" 
+                    alt="https://selwynvillar.wixsite.com/aurumdawnesports">
+                </div>
+                <div class="col-lg-6 text-center gy-5 d-none d-lg-block" id="portfolioDesc">
+                  <h4>First Website</h4>
+                  <p style="font-weight: 500;">Created by PanzerWeb using Wix. This is intended to provide transparency
+                    to all who wants to contact him. The website consist of a chatbox, and gallery,
+                    and it is the first ever portfolio website of PanzerWeb.
+                    <a href="#" class="text-warning fw-bold">Visit Now!</a>
+                  </p>
+                </div>
+          <!--SECOND PORTFOLIO-->
+                <div class="col-lg-6 text-center gy-5 d-none d-lg-block" id="portfolioDesc">
+                  <h4>Second Website</h4>
+                  <p style="font-weight: 500;">
+                    The official website of the Aurum Shining Dawn, created by PanzerWeb using 
+                    Wix. It features dynamic visual presentation, the description of the players,
+                    and a community open to all Aurum Fans.
+                    <a href="#" class="text-warning fw-bold">Visit Now!</a>
+                  </p>
+                </div>
+                <div class="col-lg-5" data-aos="slide-left" data-aos-duration="1000" data-aos-once="true">
+                  <img src="./assets/Portfolio/PortfolioSite[1].png" class="gallery-item" alt="">
+              </div>
+          <!--THIRD PORTFOLIO-->
+              <div class="col-lg-5" data-aos="slide-right" data-aos-duration="500" data-aos-once="true">
+                <img src="./assets/Portfolio/PorfolioSite[2].png" class="gallery-item" alt="">
+              </div>
+              <div class="col-lg-6 text-center gy-5 d-none d-lg-block" id="portfolioDesc">
+                <h4>Third Website</h4>
+                <p style="font-weight: 500;">
+                  A login form that features a progress bar developed by PanzerWeb using
+                  basic front-end web components, namely, HTML5, CSS3, and JavaScript.
+                  It also features the showing of password, and gender identification.
+                  <a href="#" class="text-danger fst-italic text-decoration-none">No link provided</a>
+                </p>
+              </div>
+          <!--FOURTH PORTFOLIO-->
+              <div class="col-lg-6 text-center gy-5 d-none d-lg-block" id="portfolioDesc">
+                <h4>Fourth Website</h4>
+                <p style="font-weight: 500;">
+                  The first official one-page landing website of Aurum Shining Dawn. This website
+                  features a basic animation, and other simple design. Overall, it is still not finished.
+                  <a href="#" class="text-danger fst-italic text-decoration-none">No link provided</a>
+
+                </p>
+              </div>
+              <div class="col-lg-5" data-aos="slide-left" data-aos-duration="1000" data-aos-once="true">
+                <img src="./assets/Portfolio/PorfolioSite[3].png" class="gallery-item" alt="">
+              </div>
+          <!--FIFTH PORTFOLIO-->
+            <div class="col-lg-5" data-aos="slide-right" data-aos-duration="500" data-aos-once="true">
+                <img src="./assets/Portfolio/PorfolioSite[4].png" class="gallery-item" alt="">
+            </div>
+            <div class="col-lg-6 text-center gy-5 d-none d-lg-block" id="portfolioDesc">
+                <h4>Fifth Website</h4>
+                <p style="font-weight: 500;">
+                  This website is the first authentic code portfolio website of PanzerWeb.
+                  This features all webpage, a portfolio website must have; a bonus digital
+                  clock is also featured. It is styled with a simple color palette, although
+                  not a very stylish website, this is Panzer's proud work.
+                  <a href="#" class="text-danger fst-italic text-decoration-none">No link provided</a>  
+                </p>
+            </div>
+          <!--SIXTH PORTFOLIO-->
+            <div class="col-lg-6 text-center gy-5 d-none d-lg-block" id="portfolioDesc">
+                <h4>Sixth Website</h4>
+                <p style="font-weight: 500;">
+                  The first Glassmorphism Login Form developed by PanzerWeb. The form features
+                  a Glassmorphism form, an animated background using a GIF, and a password measure.
+                  <a href="#" class="text-danger fst-italic text-decoration-none">No link provided</a>
+
+                </p>
+            </div>
+            <div class="col-lg-5" data-aos="slide-left" data-aos-duration="1000" data-aos-once="true">
+              <img src="./assets/Portfolio/PorfolioSite[5].png" class="gallery-item" alt="">
+          </div> 
+
+              
+
+
+
+        </div>
+            
+    </section>
+
+    <!-- Button trigger modal -->
+  
+  <!-- Modal starts -->
+  <div class="modal fade" id="gallery-modal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Projects</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <img src="./assets/Portfolio/PorfolioSite[0].png" class="modal-img" alt="">
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+<br>
+<br id="questionsec">
+<br>
+
+<!--FAQs SECTION with ACCORDION-->
+  <section id="questions" class="bg-info my-5 py-5" data-aos="flip-up" data-aos-duration="1000" data-aos-once="true"
+  style="opacity: 0.7;">
+    <div class="container-lg">
+        <div class="row justify-content-between align-items-center">
+            <div class="col-sm-3 col-lg-3" id="waifu-col">
+                <img src="./assets/Waifu.gif" alt="" id="anime-faqs">
+            </div>
+            <div class="col-sm-3 col-lg-8 fw-bold">
+                <div class="accordion" id="accordionPanelsStayOpenExample">
+                    <div class="accordion-item">
+                      <h2 class="accordion-header" id="panelsStayOpen-headingOne">
+                        <button class="accordion-button bg-dark text-light" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true" aria-controls="panelsStayOpen-collapseOne">
+                          What is this website all about?
+                        </button>
+                      </h2>
+                      <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show" aria-labelledby="panelsStayOpen-headingOne">
+                        <div class="accordion-body list-group-item-action list-group-item-dark text-dark">
+                          <strong>This website is developed as a portfolio.</strong> 
+                          Here you can learn more about me, my recent projects, and my character as a programmer.
+                          I also aim to teach young web developers or those who aspires to become a web developer
+                          to become the best of their own within this field.
+                        </div>
+                      </div>
+                    </div>
+                    <div class="accordion-item">
+                      <h2 class="accordion-header" id="panelsStayOpen-headingTwo">
+                        <button class="accordion-button collapsed bg-success text-dark" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false" aria-controls="panelsStayOpen-collapseTwo">
+                          What topics am I going to learn?
+                        </button>
+                      </h2>
+                      <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingTwo">
+                        <div class="accordion-body list-group-item-action list-group-item-success">
+                          <strong>Basic Front-End Development, and UI/UX Designing.</strong>
+                          As a front-end web developer, and also a UI/UX Designer, I have this urge and passion to
+                          teach what I learned from my past experiences, therefore, I assure you of my capability, as well as 
+                          my ability as your fellow developer. 
+                        </div>
+                      </div>
+                    </div>
+                    <div class="accordion-item">
+                      <h2 class="accordion-header" id="panelsStayOpen-headingThree">
+                        <button class="accordion-button collapsed bg-secondary text-dark" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false" aria-controls="panelsStayOpen-collapseThree">
+                          Is taking this course free?
+                        </button>
+                      </h2>
+                      <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingThree">
+                        <div class="accordion-body list-group-item-action list-group-item-secondary">
+                          <strong>No, but it is very affordable</strong> 
+                          My skills are not a giveaway, it is one the reasons why this website was built.
+                          However, I understand deeply how you felt, that's why I, PanzerWeb, will 
+                          open a course at a very affordable price. 
+                        </div>
+                      </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="panelsStayOpen-headingFour">
+                          <button class="accordion-button collapsed bg-warning text-dark" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseFour" aria-expanded="false" aria-controls="panelsStayOpen-collapseFour">
+                            Can this website really help me become a true web developer?
+                          </button>
+                        </h2>
+                        <div id="panelsStayOpen-collapseFour" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingFour">
+                          <div class="accordion-body list-group-item-action list-group-item-warning">
+                            <strong>No! It all depends on you.</strong> 
+                            No teacher can give you success except for yourself, they only teach you
+                            to become something that will lead you to the path of success. Programming
+                            is at its best when you are learning yourself, after all, we mentors only
+                            teach you what you need but not what you necessarily must have.
+                          </div>
+                        </div>
+                      </div>
+                  </div>
+            </div>
+        </div>
+    </div>
+  </section>
+
+<br>
+<br>
+<br>
+<br>
+
+<!--FOOTER-->
+<footer class="bg-dark text-light mt-5 pt-5 pb-4" data-aos="slide-right" 
+data-aos-once="true" data-aos-duration="500" data-aos-delay="50">
+    <div class="container-lg text-center text-md-left">
+        <div class="row text-md-left">
+            <div class="col-md-4 col-lg-3 col-lg-3 mx-auto mt-3">
+                     <h5 class="text-info fw-bold mb-4">PanzerWeb</h4>
+                <p class="lead-3">
+                    PanzerWeb is created on the 30th of June, year 2022 by Panzer.
+                    The website was created as a Portfolio as well as a site where
+                    you can contact the developer himself. Learn Web Development with Panzer.
+                </p>
+            </div>
+            <div class="col-md-4 col-lg-2 col-lg-2 mx-auto mt-3" id="useful-links">
+                <h5 class="text-warning fw-bold">Useful Links</h4>
+                <p>
+                    <a href="#service" class="link-info">Service</a>
+                </p>
+                <p>
+                    <a href="#about-us" class="link-info">About Us</a>
+                </p>
+                <p>
+                    <a href="#" class="link-info">Portfolio</a>
+                </p>
+                <p>
+                    <a href="#" class="link-info">Terms of Service</a>
+                </p>
+                <p>
+                    <a href="#" class="link-info">Privacy Policy</a>
+                </p>
+            </div>
+            <div class="col-md-4 col-lg-3 col-lg-3 mx-auto mt-3">
+                    <h5 class="text-warning mb-4">Contacts</h4>                
+                <p>
+                    <i class="bi bi-house-door-fill mx-3">Bangoy St. Brgy San Francisco, Panabo City</i>
+                </p>
+                <p>
+                    <i class="bi bi-telephone mx-3">+63 09090774336</i>
+                </p>
+                <p>
+                    <i class="bi bi-envelope mx-3">@selwynvillar@gmail.com</i>
+                </p>
+                <p>
+                    <i class="bi bi-geo-alt-fill mx-3">Davao Del Norte, Philippines</i>
+                </p>
+            </div>
+        </div>
+
+        <hr class="mb-2">
+
+            <div class="row align-items-center">
+                <div class="col-md-7 col-lg-8">
+                    <p>Copyright &copy;<script>document.write(new Date().getFullYear());</script> All Rights Reserved</p>
+                        <a href="#" class="text-decoration-none">
+                            <strong>PanzerWeb</strong>
+                         </a>
+                </div>
+
+                <div class="col-md-5 col-lg-4">
+                    <ul class="list-unstyled list-inline" id="footer-soc">
+                        <li class="list-inline-item">
+                            <a href="#" class="btn-floating btn-sm text-white" style="font-size: 1.8rem;">
+                                <i class="bi bi-facebook"></i></a>
+                        </li>
+                        <li class="list-inline-item">
+                            <a href="#" class="btn-floating btn-sm text-white" style="font-size: 1.8rem;">
+                                <i class="bi bi-tiktok"></i></a>
+                        </li>
+                        <li class="list-inline-item">
+                            <a href="#" class="btn-floating btn-sm text-white" style="font-size: 1.8rem;">
+                                <i class="bi bi-instagram"></i></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+    </div>
+</footer>
+
+
+
+  
+
+     <!-- JavaScript Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+<script src="app.js"></script>
+
+<!--Github file-->
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script>
+  AOS.init({
+    easing: 'ease-in-out'
+  });
+</script>
+    
+</script>
+</body>
+</html>
+
+
+<!--             
+                <div class="col-lg-4" data-aos="slide-right" data-aos-duration="500" data-aos-once="true">
+                    <img src="./assets/Portfolio/PorfolioSite[2].png" class="gallery-item" alt="">
+                </div>
+                <div class="col-lg-4" data-aos="slide-right" data-aos-duration="1000" data-aos-once="true">
+                    <img src="./assets/Portfolio/PorfolioSite[3].png" class="gallery-item" alt="">
+                </div>
+                <div class="col-lg-4" data-aos="slide-right" data-aos-duration="500" data-aos-once="true">
+                    <img src="./assets/Portfolio/PorfolioSite[4].png" class="gallery-item" alt="">
+                </div>
+                <div class="col-lg-4" data-aos="slide-right" data-aos-duration="1000" data-aos-once="true">
+                    <img src="./assets/Portfolio/PorfolioSite[5].png" class="gallery-item" alt="">
+                </div> 
+              -->
