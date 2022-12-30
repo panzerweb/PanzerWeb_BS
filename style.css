@@ -26,7 +26,6 @@
 body{
     min-height: 150vh;
     background-color: var(--main-bg);
-    background-image: url("./assets/1255561.jpg"), linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5));
     background-blend-mode: multiply;
 }
 

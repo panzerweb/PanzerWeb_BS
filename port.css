@@ -22,7 +22,6 @@
 body{
     min-height: 150vh;
     background-color: var(--main-bg);
-    background-image: url("./assets/1255561.jpg"), linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5));
     background-blend-mode: multiply;
 }
 #PortfolioHead{
@@ -58,7 +57,6 @@ img{
 }
 
 .gallery img{
-    opacity: 0.5;
     border-radius: 5px;
     box-shadow: 0 15px 15px rgba(201, 200, 200, 0.3);
     cursor: pointer;
@@ -66,8 +64,8 @@ img{
 }
 
 .gallery img:hover{
-    opacity: 1;
-    transform: scaleY(1.1);
+    filter: brightness(50%);
+    transform: scaleX(1.03);
 }
 .gallery-modal .modal-img{
     width: 100%;
