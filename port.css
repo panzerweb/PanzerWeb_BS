@@ -32,7 +32,8 @@ body{
 #nav-logo img{
     object-fit: contain;
     aspect-ratio: 16/9;
-    width: 15rem;
+    width: 10rem;
+    transform: scale(1.5);
 }
 #navbarNav ul li{
     display: inline-block;
