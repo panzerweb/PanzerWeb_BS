@@ -15,7 +15,7 @@
 }
 /*Root variable color for our dark theme toggler*/
 :root {
-    --main-bg: rgb(151, 147, 147);
+    --main-bg: rgb(255, 255, 255);
     --main-text: rgb(240, 225, 17);
 }
 
@@ -114,10 +114,22 @@ background: linear-gradient(rgb(62, 63, 61), rgb(21, 22, 21));*/
 }
 
 /*Targets the navigational links to hover an underline beneath each webpages.*/
+#nav-bg{
+    background-color: #212529 !important;
+}
+#nav-logo img{
+    object-fit: contain;
+    aspect-ratio: 16/9;
+    width: 15rem;
+}
 #navbarNav ul li{
     display: inline-block;
     position: relative;
-    color: rgb(62, 151, 2);
+}
+#navbarNav ul li a{
+    display: inline-block;
+    position: relative;
+    color:#6e706c;
 }
 
 #navbarNav ul li a:after{
