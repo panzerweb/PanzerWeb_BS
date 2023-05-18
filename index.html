@@ -23,9 +23,10 @@
                     alt="" class="d-inline-block align-text-top">
                 </a>
                 <!--This code is the responsive toggling button for mobile devices or the 3 lines navigational button.-->
-                <button class="btn btn-success navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <button class="btn btn-success navbar-toggler custom-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                   </button>
+                  
 <!--Navigational brand ends-->
 
 <!--Navigational links start here-->
@@ -72,7 +73,7 @@
                     </h1>
                     <p class="lead text-light" id="intro-paragraph" data-aos="slide-right" data-aos-duration="1000" data-aos-delay="30"
                     data-aos-once="true">
-                        A <strong class="fs-5">Front-End Web Developer</strong> and <strong class="fs-5">Graphic Designer</strong> located at Panabo City,
+                        A <strong id="strong-text">Front-End Web Developer</strong> and <strong id="strong-text">Graphic Designer</strong> located at Panabo City,
                         Davao Del Norte, Philippines.
                     </p>
                     <a href="https://selwynvillar.wixsite.com/selwynport" target="_blank" role="button" 
@@ -93,19 +94,19 @@
                                    
                 </div>
 <!--SOCIAL MEDIA LINKS STARTS HERE-->
-                <div class="col-md-5 text-center" data-aos="slide-right">
-                    <a href="#" class="social-link p-3">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-facebook" viewBox="0 0 16 16">
+                <div class="container" data-aos="slide-right">
+                    <a href="#" class="social-link p-3" id="socials">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-facebook" viewBox="0 0 16 16">
                             <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z"/>
                           </svg>
                     </a>
                     <a href="#" class="social-link p-3">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-instagram" viewBox="0 0 16 16">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-instagram" viewBox="0 0 16 16">
                             <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z"/>
                           </svg>
                     </a>
                     <a href="#" class="social-link p-3">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-tiktok" viewBox="0 0 16 16">
+                        <svg xmlns="http://www.w3.org/2000/svg"  fill="currentColor" class="bi bi-tiktok" viewBox="0 0 16 16">
                             <path d="M9 0h1.98c.144.715.54 1.617 1.235 2.512C12.895 3.389 13.797 4 15 4v2c-1.753 0-3.07-.814-4-1.829V11a5 5 0 1 1-5-5v2a3 3 0 1 0 3 3V0Z"/>
                           </svg>
                     </a>
@@ -122,8 +123,10 @@
     <section id="values" class="my-5 py-3">
         <div class="container-lg">
                 <div class="text-center" id="text-title">
-                    <h4 class="h1">Why Chose Panzer???</h4>
-                    <p class="lead my-3">Become the best developer you can ever be with Panzer.</p>
+                    <h4 class="h1">Why Chose Me?</h4>
+                    <p class="lead my-3">Equipped with qualities befitting to your needs and wants in technology and design </p>
+                    <p class="lead my-3">Aiming to show you a great service in this tech era.</p>
+                    <i class="bi bi-arrow-down-square-fill"></i>
                 </div>
 
                 <!--Row and Columns for the cards specified for small to xxl screens-->
@@ -133,10 +136,13 @@
                             <h4 class="card-header bg-dark text-light text-center">PANZERWEB</h4>
                             <div class="card-body text-center py-4" id="cardBody">
                                 <h5 class="card-title fw-bold">Quality Learning</h5>
-                                <p class="card-subtitle py-3">Learn quality web development topics and incorporate yourself
-                                    into a more sophisticated roadmap of Front-End Web development.
+                                <p class="card-subtitle py-3">Emphasize your dedication to continuous 
+                                    learning in both web development and graphic design. Highlight your
+                                     commitment to improving your skills, staying up to date with the latest
+                                      design trends, and leveraging new technologies. Showcase your ability to
+                                       apply your learning to create high-quality and visually appealing websites
+                                        and designs.
                                 </p>
-                                <a href="#" class="btn btn-outline-success">Learn More</a>
                             </div>
                         </div>
                     </div>
@@ -145,10 +151,11 @@
                             <h4 class="card-header bg-dark text-light text-center">PANZERWEB</h4>
                             <div class="card-body text-center py-4" id="cardBody">
                                 <h5 class="card-title fw-bold">Trustworthy</h5>
-                                <p class="card-subtitle py-3">Panzer came from a humble beginning in the world of
-                                    coding, thus ensuring everyone will be able to trust him as he grows forward.
+                                <p class="card-subtitle py-3">Establish trust by highlighting your reliability and professionalism.
+                                     Showcase your ability to meet deadlines, deliver on promises, and provide exceptional service to
+                                      clients. Highlight your track record of successful projects and positive feedback from satisfied
+                                       clients. Demonstrating your reliability will instill confidence in visitors and make them more likely to trust you with their projects.
                                 </p>
-                                <a href="#" class="btn btn-outline-success">Learn More</a>
                             </div>
                         </div>
                     </div>
@@ -157,10 +164,9 @@
                             <h4 class="card-header bg-dark text-light text-center">PANZERWEB</h4>
                             <div class="card-body text-center py-4" id="cardBody">
                                 <h5 class="card-title fw-bold">Approachable</h5>
-                                <p class="card-subtitle py-3">Being able to help everyone is what Panzer
-                                    will always offer to each and everyone who are willing to learn.
+                                <p class="card-subtitle py-3"> Communicate your friendly and approachable nature. Let visitors know that you are open to discussions, consultations, and collaborations. Provide clear contact information and encourage visitors to reach out to you with their inquiries. 
+                                    Show that you value effective communication and building strong relationships with clients.
                                 </p>
-                                <a href="#" class="btn btn-outline-success">Learn More</a>
                             </div>
                         </div>
                     </div>
@@ -169,10 +175,9 @@
                             <h4 class="card-header bg-dark text-light text-center">PANZERWEB</h4>
                             <div class="card-body text-center py-4" id="cardBody">
                                 <h5 class="card-title fw-bold">Up-To-Date Developer</h5>
-                                <p class="card-subtitle py-3">Being updated to the latest trend of the coding world;
-                                    HTML5, CSS3, ES6, Bootstrap5, and other Front-End Components.
+                                <p class="card-subtitle py-3">Highlight your commitment to staying up to date with the latest industry trends, design techniques, and technological advancements in both web development and graphic design. Showcase your ability to combine the best practices of both disciplines to create visually stunning and functional websites. 
+                                    Demonstrate your proficiency in using modern tools, frameworks, and design software.
                                 </p>
-                                <a href="#" class="btn btn-outline-success">Learn More</a>
                             </div>
                         </div>
                     </div>
@@ -181,10 +186,9 @@
                             <h4 class="card-header bg-dark text-light text-center">PANZERWEB</h4>
                             <div class="card-body text-center py-4" id="cardBody">
                                 <h5 class="card-title fw-bold">Optimistic</h5>
-                                <p class="card-subtitle py-3">Able to see the positive factors despite failing;
-                                    Panzer never backs down and always sees risk as an opportunity.
+                                <p class="card-subtitle py-3">Convey your positive and enthusiastic attitude towards your work in both web development and graphic design. Showcase your passion for creating visually appealing and user-friendly websites and designs. Highlight your ability to approach challenges with a positive mindset, 
+                                    finding creative solutions and delivering results that exceed client expectations.
                                 </p>
-                                <a href="#" class="btn btn-outline-success">Learn More</a>
                             </div>
                         </div>
                     </div>
@@ -193,10 +197,9 @@
                             <h4 class="card-header bg-dark text-light text-center">PANZERWEB</h4>
                             <div class="card-body text-center py-4" id="cardBody">
                                 <h5 class="card-title fw-bold">Open-Minded</h5>
-                                <p class="card-subtitle py-3">A quality coder does not only learns and shows his success 
-                                    but also learns and improvised himself from others.
+                                <p class="card-subtitle py-3">Showcase your openness to new ideas and your ability to think creatively in both web development and graphic design. Highlight instances where you have successfully collaborated with clients, understanding their unique visions and translating them into visually striking designs and functional websites. 
+                                    Communicate your ability to adapt to client feedback and provide solutions that align with their goals.
                                 </p>
-                                <a href="#" class="btn btn-outline-success">Learn More</a>
                             </div>
                         </div>
                     </div>
@@ -216,7 +219,7 @@
     <section id="about-us" class="page-section bg-dark mt-5 mb-0">
         <div class="container-lg" data-aos="slide-right" data-aos-duration="2000" data-aos-delay="20" 
         data-aos-once="true">
-            <h2 class="page-section-heading text-center text-uppercase text-white pt-3">ABOUT</h2>
+            <h2 class="page-section-heading text-center text-uppercase text-white pt-3">ABOUT THIS WEBSITE</h2>
                 <div class="divider-custom divider-light">
                     <div class="divider-custom-icon text-center my-4">
                         <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-star-fill" style="color:rgb(9, 250, 9);" viewBox="0 0 16 16">
@@ -230,9 +233,9 @@
                 data-aos-once="true">
                     <p class="lead text-light">
                         PanzerWeb is a website created by Panzerweb, it is his official website open to
-                        public. This website aims to help and provide aspiring coders and programmers
-                        to be the best in their fields in the world of technology. Here you can learn more
-                        about Panzer and will help you decide to contact him for help.
+                        public. This website aims to showcase my skills and experiences towards Graphic
+                        Design and Web Development. This will serve as a core evidence of my portfolio and
+                        attributes beneficial for further credentials.
                     </p>
                 </div>
                 <div class="col-lg-4 me-auto"  data-aos="slide-right" data-aos-duration="3500" data-aos-delay="10"
@@ -258,95 +261,99 @@
         <div class="container" data-aos="fade-down" data-aos-duration="2000" data-aos-delay="0" data-aos-once="true">
             <div class="section-header text-center" id="text-services">
                 <h4 class="h1" style=" font-family: 'Pricedown bl', sans-serif; font-size: 3.052rem;
-                    ">Our Services</h4>
+                    ">My Services</h4>
             </div>
 
             <div class="row justify-content-center align-items-center my-5 gy-3">
                 <div class="col-md-4 col-lg-4" id="column-card">
                     <div class="card pt-4" id="column-card-text">
                         <div class="card-img mx-auto" style="width: 10rem;" id="service-img-card">
-                            <img src="./assets/Service/1200px-HTML5_logo_and_wordmark.svg.png" alt="" class="img-fluid">
+                            <img src="./assets/Service/ServiceImgNew/WebDev-service.png" alt="" class="img-fluid">
                         </div>
 
-                        <div class="card-body text-center py-4">
-                            <h5 class="card-title fw-bold">HTML5</h5>
-                            <p class="card-subtitle py-3">Learning HTML5 from its very basics and fundamentals
-                                to complex syntaxes that is ready for you! You will learn about the bone framework of the 
-                                website in just a single course.
+                        <div class="card-body text-center py-4" id="card-content">
+                            <h5 class="card-title fw-bold">Web Development</h5>
+                            <p class="card-subtitle py-3">I offer professional web development services specializing in HTML, 
+                                CSS, simple JavaScript, and Bootstrap. Whether you need a responsive website, a custom design, 
+                                or interactive elements, I can bring your vision to life with clean and modern code.
                             </p>
                         </div>
                     </div>
                 </div>
                 <div class="col-md-4 col-lg-4" id="column-card">
                     <div class="card pt-4" id="column-card-text">
-                        <div class="card-img mx-auto" style="width: 7rem;" id="service-img-card">
-                            <img src="./assets/Service/CSS3_logo_and_wordmark.svg.png" alt="" class="img-fluid">
+                        <div class="card-img mx-auto" style="width: 10rem;" id="service-img-card">
+                            <img src="./assets/Service/ServiceImgNew/Graphic Design.png" alt="" class="img-fluid">
                         </div>
 
                         <div class="card-body text-center py-4">
-                            <h5 class="card-title fw-bold">CSS3</h5>
+                            <h5 class="card-title fw-bold">Graphic Design</h5>
                             <p class="card-subtitle py-3">
-                                CSS3 is the greatest styling for all websites, learn about this for 
-                                a single course and make yourself one of the greatest 
-                                web designer of all time. PanzerWeb offers it for an affordable cost.
+                                I provide exceptional graphic design services utilizing Canva and Photopea. From stunning social media graphics to eye-catching banners and promotional materials, I can create visually appealing designs that captivate your audience.
+                                 Let me transform your ideas into captivating visuals that make a lasting impact.
                             </p>
                         </div>
                     </div>
                 </div>
                 <div class="col-md-4 col-lg-4" id="column-card">
                     <div class="card pt-4" id="column-card-text">
-                        <div class="card-img mx-auto" style="width: 17.4rem;" id="service-img-card">
-                            <img src="./assets/Service/javascript-logo-transparent-logo-javascript-images-3.png" alt="" class="img-fluid">
+                        <div class="card-img mx-auto" style="width: 10rem;" id="service-img-card">
+                            <img src="./assets/Service/ServiceImgNew/ui_ux_design.png" alt="" class="img-fluid">
                         </div>
 
                         <div class="card-body text-center py-4">
-                            <h5 class="card-title fw-bold">JavaScript</h5>
+                            <h5 class="card-title fw-bold">UI Design</h5>
                             <p class="card-subtitle py-3">
-                                JavaScript, often abbreviated JS, is a programming language
-                                that is one of the core technologies of the World Wide Web, alongside HTML and CSS.
-                                Here in PanzerWeb, you can learn it for a single course.
+                                I specialize in UI design using Figma, a powerful design tool. With a keen eye for aesthetics and a 
+                                deep understanding of user experience principles, I create intuitive and visually appealing user
+                                 interfaces. Let me bring your ideas to life, crafting beautiful and functional designs that enhance
+                                  the user journey and drive engagement.
                             </p>
                         </div>
                     </div>
                 </div>
                 <div class="col-md-4 col-lg-4" id="column-card">
                     <div class="card pt-4" id="column-card-text">
-                        <div class="card-img mx-auto" style="width: 19rem;" id="service-img-card">
-                            <img src="./assets/Service/Bootstrap.png" alt="" class="img-fluid">
+                        <div class="card-img mx-auto" style="width: 10rem;" id="service-img-card">
+                            <img src="./assets/Service/ServiceImgNew/Creative Writing.png" alt="" class="img-fluid">
                         </div>
 
                         <div class="card-body text-center py-4">
-                            <h5 class="card-title fw-bold">Bootstrap</h5>
-                            <p class="card-subtitle py-3">Bootstrap is a powerful, feature-packed frontend toolkit.
-                                 Build anything—from prototype to production—in minutes. Learn now for a single course.
+                            <h5 class="card-title fw-bold">Creative Writer</h5>
+                            <p class="card-subtitle py-3">.Ignite Imagination: Embrace the Power of Prose Poetry.
+                                 I specialize in crafting evocative and lyrical prose poetry that transcends traditional 
+                                 boundaries. Through vivid imagery and rhythmic language, I create captivating narratives that stir emotions and provoke contemplation. Let's embark on a poetic journey together and give your words a mesmerizing voice.
                             </p>
                         </div>
                     </div>
                 </div>
                 <div class="col-md-4 col-lg-4" id="column-card">
                     <div class="card pt-4" id="column-card-text">
-                        <div class="card-img mx-auto" style="width: 11.5rem;" id="service-img-card">
-                            <img src="./assets/Service/figma-logo_brandlogos.net_6n1pb.png" alt="" class="img-fluid">
+                        <div class="card-img mx-auto" style="width: 8rem;" id="service-img-card">
+                            <img src="./assets/Service/ServiceImgNew/Singer.png" alt="" class="img-fluid">
                         </div>
 
                         <div class="card-body text-center py-4">
-                            <h5 class="card-title fw-bold">Figma</h5>
-                            <p class="card-subtitle py-3">Figma is a vector graphics editor and prototyping tool which is primarily web-based, with additional
-                                 offline features enabled by desktop applications for macOS and Windows.
+                            <h5 class="card-title fw-bold">Vocal Request</h5>
+                            <p class="card-subtitle py-3">I offer captivating vocal performances that captivate audiences and 
+                                leave a lasting impression. From soulful melodies to powerful ballads, let my 
+                                voice bring your musical desires to life. Whether you're seeking a mesmerizing performance or a customized song request, I'm here to deliver an unforgettable musical experience.
                             </p>
                         </div>
                     </div>
                 </div>
                 <div class="col-md-4 col-lg-4" id="column-card">
                     <div class="card pt-4" id="column-card-text">
-                        <div class="card-img mx-auto" style="width: 17.5rem;" id="service-img-card">
-                            <img src="./assets/Service/Adobe-Photoshop-Logo.png" alt="" class="img-fluid">
+                        <div class="card-img mx-auto" style="width: 10rem;" id="service-img-card">
+                            <img src="./assets/Service/ServiceImgNew/Artist.png" alt="" class="img-fluid">
                         </div>
 
                         <div class="card-body text-center py-4">
-                            <h5 class="card-title fw-bold">Adobe Photoshop</h5>
-                            <p class="card-subtitle py-3">Adobe Photoshop is a raster graphics editor developed and published by Adobe Inc. for Windows and macOS. It was originally created in 1988 by Thomas and John Knoll. Since then, the software has become the 
-                                industry standard not only in raster graphics editing.
+                            <h5 class="card-title fw-bold">Traditional Artistry</h5>
+                            <p class="card-subtitle py-3">As a traditional artist, I wield brushes and pens to create captivating artworks that breathe life onto canvases. 
+                                With a keen eye for detail and a passion for self-expression, I bring your 
+                                visions to reality through the strokes of my brush. Whether
+                                 you desire a personalized masterpiece or seek to adorny our space with original artwork,
                             </p>
                         </div>
                     </div>

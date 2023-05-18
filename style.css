@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Kdam+Thmor+Pro&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Prompt&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Fira+Sans+Condensed:wght@500&family=Roboto+Condensed&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans+Condensed:wght@500&family=Roboto+Condensed&family=Ubuntu:wght@700&display=swap');
 @font-face {
     font-family: pricedown bl;
     src: url(./Fonts/pricedown\ bl.otf);
@@ -43,6 +43,7 @@ body::before{
 #intro{
     position: relative;
     width: 100%;
+    height: 100%;
     min-height: 100vh;
     background: linear-gradient(#000000, #000000);
     background-size: cover;
@@ -58,11 +59,13 @@ body::before{
 
 
 #intro h1{
-    font-family: 'Fira Sans Condensed', sans-serif;
-    font-size: 5.653rem;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 5.063rem;
 }
+
 #trusted-text{
-    font-size: 3rem;
+    font-size: 2.25rem;
+    text-align: justify;
 }
 
 /*The hovering into the whole background inside the container of introduction section,
@@ -84,7 +87,7 @@ background: linear-gradient(rgb(62, 63, 61), rgb(21, 22, 21));*/
     position: absolute;
     top: 0; right: 0; bottom: 0; left: 0;
     inset: 0 0 0 0;
-    background: linear-gradient(rgb(62, 63, 61), rgb(21, 22, 21));
+    background: linear-gradient(rgb(5, 5, 5), rgb(2, 100, 2));
     z-index: -1;
     transition: transform .7s ease;
 }
@@ -92,10 +95,15 @@ background: linear-gradient(rgb(62, 63, 61), rgb(21, 22, 21));*/
 
 /*Styling for the paragraph inside introduction section*/
 #intro-paragraph{
+    font-family: 'Roboto Condensed', sans-serif;
+    letter-spacing: 0.1rem;
     font-weight: 400;
     font-size: 1.2rem;
+    text-align: justify;
 }
-
+#strong-text{
+    font-size: 1.3rem;
+}
 #image-intro{
     height: 500px;
     margin-left: 10rem;
@@ -150,17 +158,21 @@ background: linear-gradient(rgb(62, 63, 61), rgb(21, 22, 21));*/
   
 
 /*For social media links styling.*/
-.social-link{
+
+.social-link svg{
+    width: 2.1rem;
+    height: 2.1rem;
     color: rgb(216, 211, 211);
     transition: 0.5s ease-in-out;
 }
-.social-link:hover{
+.social-link svg:hover{
     color: var(--text-console);
 }
 
 /*Targets the navigational links to hover an underline beneath each webpages.*/
 #nav-bg{
-    background-color: #212529 !important;
+    background: linear-gradient(#000000, #000000) !important;
+
 }
 
 #nav-logo img{
@@ -211,7 +223,7 @@ background: linear-gradient(rgb(62, 63, 61), rgb(21, 22, 21));*/
     position: relative;
     display: inline;
     padding-bottom: 5px;
-    font-family: 'pricedown bl', sans-serif;
+    font-family: 'Ubuntu', sans-serif;
     font-size: 3.052rem;
 }
 #text-title h4:after{
@@ -222,7 +234,7 @@ background: linear-gradient(rgb(62, 63, 61), rgb(21, 22, 21));*/
     height: 2px;
     bottom: 0;
     left: 0;
-    background-color: #0caf3d;
+    background-color: var(--text-console);
     transform-origin: bottom right;
 }
 
@@ -233,18 +245,25 @@ background: linear-gradient(rgb(62, 63, 61), rgb(21, 22, 21));*/
 #text-title p{
     font-size: 1.563rem;
     font-weight: 600;
-    font-family: 'Prompt', sans-serif;
+    font-family: 'Roboto Condensed', sans-serif;
+    letter-spacing: 0.1rem;
 }
 
 /*Each hover will transform the translateY of the cards*/
 #card-card{
     width: 100%;
+    height: 100%;
     position: relative;
     transition: 0.1s linear;
+    box-shadow: rgba(255, 255, 255, 0.2) 0px 0px 0px 1px inset, rgba(0, 0, 0, 0.9) 0px 0px 0px 1px;
 }
-
 #card-card:hover{
     transform: translateY(10px);
+}
+
+#card-card h4{
+    font-family: 'Roboto Condensed', sans-serif;
+    letter-spacing: 0.4rem;
 }
 
 /*This code is for the body of the card in Bootstrap, to hover their background color into
@@ -255,12 +274,13 @@ background: linear-gradient(rgb(62, 63, 61), rgb(21, 22, 21));*/
     background: linear-gradient(#313638, #1e5e5e);
     opacity: 0.5;
     transition: all 1s ease-in-out;
+    
 }
 #cardBody h5, #cardBody p {
+    font-family: 'Roboto Condensed', sans-serif;
     opacity: 0;
     transition: all 0.5s ease-in-out;
 }
-
 #cardBody:hover{
     color: beige;
     opacity: 1;
@@ -277,12 +297,15 @@ background: linear-gradient(rgb(62, 63, 61), rgb(21, 22, 21));*/
 /*About us styling STARTS*/
 
 #about-us h2{
-    font-family: 'Prompt', sans-serif;    
+    font-family: 'Ubuntu', sans-serif;  
     font-size: 5rem;
 }
 
 #about-us p{
-    font-family: 'Prompt', sans-serif;}
+    font-family: 'Roboto Condensed', sans-serif;
+    text-align: justify;
+    padding-bottom: 1rem;
+}
 
 /*About us styling ENDS*/
 
@@ -311,7 +334,7 @@ background: linear-gradient(rgb(62, 63, 61), rgb(21, 22, 21));*/
 }
 
 #column-card-text{
-    height: 70vh;
+    height: 80vh;
 }
 #service-img-card{
     position: relative;
@@ -368,15 +391,57 @@ background: linear-gradient(rgb(62, 63, 61), rgb(21, 22, 21));*/
 
 
 /* Targets paragraph and image to be responsive, go to index.html line 61, and line 70*/
-@media only screen and (min-height: 480px) and (max-width: 767px){
-    #intro-paragraph{
+@media only screen and (min-width: 320px) and (max-width: 992px){
+    .custom-toggler .navbar-toggler-icon {
+        background-color: #28a745;
+        padding: 1.5rem;
+        border-radius: 5px;
+      }
+    
+    #content{
+        max-width: 1000px;
+        text-align: center;
+    }
+    #intro h1{
+        font-family: 'Ubuntu', sans-serif;
+        font-size: 3rem;
+    }
+    #trusted-text{
+        font-size: 1.5rem;
+        text-align: center;
+    }
+    #strong-text{
         font-size: 0.7rem;
     }
+    #intro-paragraph{
+        font-size: 0.7rem;
+        text-align: center;
+    }
+    .social-link svg{
+    width: 1.5rem;
+}
     #image-intro{
         height: 15rem;
         margin-left: auto;
     }
-
+    #text-title h4{
+        position: relative;
+        display: inline;
+        padding-bottom: 5px;
+        font-family: 'Ubuntu', sans-serif;
+        font-size: 1.953rem;
+    }
+    #text-title p{
+        font-size: 1rem;
+    }
+    #about-us h2{
+        font-family: 'Ubuntu', sans-serif;  
+        font-size: 3rem;
+    }
+    
+    #column-card-text{
+        height: 100vh;
+    }
     #toggleDay{
         margin: 5px auto;
     }
