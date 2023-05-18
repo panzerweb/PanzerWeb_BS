@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Kdam+Thmor+Pro&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Prompt&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans+Condensed:wght@500&family=Roboto+Condensed&display=swap');
 @font-face {
     font-family: pricedown bl;
     src: url(./Fonts/pricedown\ bl.otf);
@@ -17,11 +18,13 @@
 /*Root variable color for our dark theme toggler*/
 :root {
     --main-bg: rgb(255, 255, 255);
-    --main-text: #283618;
+    --main-text: #161815;
+
+    --text-console: #38b000;
 }
 
 [data-theme="dark"] {
-    --main-bg: #212529;
+    --main-bg: #080808;
     --main-text: rgb(250, 250, 250);
 }
 body{
@@ -41,8 +44,7 @@ body::before{
     position: relative;
     width: 100%;
     min-height: 100vh;
-    opacity: 0.8;
-    background: linear-gradient(#4e4e52, #223834);
+    background: linear-gradient(#000000, #000000);
     background-size: cover;
     background-attachment: fixed;
     clip-path: circle(180vh at 50% -80%);
@@ -56,7 +58,11 @@ body::before{
 
 
 #intro h1{
-    font-family: 'pricedown bl';
+    font-family: 'Fira Sans Condensed', sans-serif;
+    font-size: 5.653rem;
+}
+#trusted-text{
+    font-size: 3rem;
 }
 
 /*The hovering into the whole background inside the container of introduction section,
@@ -87,31 +93,69 @@ background: linear-gradient(rgb(62, 63, 61), rgb(21, 22, 21));*/
 /*Styling for the paragraph inside introduction section*/
 #intro-paragraph{
     font-weight: 400;
-    font-size: 1.0rem;
+    font-size: 1.2rem;
 }
 
 #image-intro{
     height: 500px;
     margin-left: 10rem;
+    opacity: 1 !important;
 }
 
 /*For the Button, specifically the 'Visit Now' button.*/
-#callNow{
-    font-weight: 600;
-    transition: 0.3s ease-in;
+#callNow {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid #000;
+    border-radius: 9999px;
+    background-color: rgba(0, 0, 0, 1);
+    padding: 0.625rem 1.5rem;
+    text-align: center;
+    color: rgba(255, 255, 255, 1);
+    outline: 0;
+    transition: all  .2s ease;
+    text-decoration: none;
 }
-#callNow:hover{
-    color: #000;
-    background: #087504;
+  
+#callNow:hover {
+    background-color: transparent;
+    color: rgba(0, 0, 0, 1);
 }
+  
+#icon {
+    height: 1.5rem;
+    width: 1.5rem;
+}
+  
+.texts {
+    margin-left: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    line-height: 1;
+}
+  
+.text-1 {
+    font-size: 1.3rem;
+    line-height: 1rem;
+    font-family: 'Roboto Condensed', sans-serif;
+    letter-spacing: 0.5rem;
+    color: var(--text-console);
+    transition: 0.5s ease-in-out;
+}
+.text-1:hover{
+    color: var(--text-light);
+}
+  
 
 /*For social media links styling.*/
 .social-link{
-    color: rgb(39, 38, 38);
+    color: rgb(216, 211, 211);
     transition: 0.5s ease-in-out;
 }
 .social-link:hover{
-    color: wheat;
+    color: var(--text-console);
 }
 
 /*Targets the navigational links to hover an underline beneath each webpages.*/
