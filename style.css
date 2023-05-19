@@ -19,7 +19,7 @@
 :root {
     --main-bg: rgb(255, 255, 255);
     --main-text: #161815;
-
+    --text-light: #fff;
     --text-console: #38b000;
 }
 
@@ -335,6 +335,8 @@ background: linear-gradient(rgb(62, 63, 61), rgb(21, 22, 21));*/
 
 #column-card-text{
     height: 80vh;
+    font-family: 'Roboto Condensed', sans-serif;
+
 }
 #service-img-card{
     position: relative;
@@ -356,23 +358,82 @@ background: linear-gradient(rgb(62, 63, 61), rgb(21, 22, 21));*/
 #form-shadow textarea{
     position: relative;
     font-weight: 600;
-    color: green;
+    color: #000;
+    font-family: 'Ubuntu', sans-serif;
+}
+#contact-section{
+    background: rgb(0,0,0);
+    background: linear-gradient(0deg, rgba(0,0,0,1) 4%, rgba(11,80,84,1) 26%, rgba(13,159,168,1) 50%, rgba(18,129,135,1) 68%, rgba(23,23,23,1) 95%);
+}
+.contact-title h3{
+    font-family: 'Fira Sans Condensed', sans-serif;
+    color: var(--text-light);
+}
+
+#floatingInput{
+    margin: 0 auto;
+    background: none;
+    border: none;
+    outline: none;
+    width: 100%;
+    padding: 10px 20px;
+    font-size: 15px;
+    box-shadow: inset 2px 5px 10px rgb(5, 5, 5);
+}
+.form-floating label{
+    color: rgb(0, 0, 0);
+    font-size: 1rem;
+
+}
+.form-floating input:focus + label{
+    font-size: 0.6rem;
+}
+#floatingTextarea{
+    margin: 0 auto;
+    background: none;
+    border: none;
+    outline: none;
+    width: 100%;
+    font-size: 15px;
+    box-shadow: inset 2px 5px 10px rgb(5, 5, 5);
 }
 
 #contact-submit{
-    font-weight: 500;
-    transition: 0.5s ease-in;
+    --glow-color: rgb(8, 223, 25);
+    --glow-spread-color: rgba(23, 161, 4, 0.781);
+    --enhanced-glow-color: rgb(109, 226, 119);
+    --btn-color: rgba(64, 136, 61, 0);
+    border: .25em solid var(--glow-color);
+    padding: 1em 3em;
+    color: var(--enhanced-glow-color);
+    font-size: 15px;
+    font-weight: bold;
+    background-color: var(--btn-color);
+    border-radius: 1em;
+    outline: none;
+    box-shadow: 0 0 0.5em 0.1em var(--glow-color),
+    0 0 2em 0.5em var(--glow-spread-color),
+    inset 0 0 0.375em 0.1em var(--glow-color);
+
+    text-shadow: 0 0 .1em var(--glow-color);
+    position: relative;
+    transition: all 0.3s;
 }
 
 #contact-submit:hover{
-    background-color: #6e706c;
-    color: whitesmoke;
+    color: #000;
+ background-color: var(--glow-color);
+ box-shadow: 0 0 1em .10em var(--glow-color),
+        0 0 2em 1em var(--glow-spread-color),
+        inset 0 0 .75em .25em var(--glow-color);
 }
 
 
 #useful-links p a{
     position: relative;
     transition: 0.5s linear;
+    font-family: 'Roboto Condensed', sans-serif;
+
 }
 
 #useful-links p a:hover{
@@ -386,6 +447,9 @@ background: linear-gradient(rgb(62, 63, 61), rgb(21, 22, 21));*/
 
 #footer-soc i:hover{
     color: rgb(221, 245, 11);
+}
+#panzerText{
+    color: var(--text-console);
 }
 
 

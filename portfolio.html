@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" type="image/x-icon" href="./assets/PanzerLogo-removebg-preview.png">
+    <link rel="icon" type="image/x-icon" href="./assets/NEWLOGO.png">
 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
     <link rel="stylesheet" href="port.css">
@@ -14,16 +14,17 @@
 </head>
 <body> 
     <!--Navigational Brand starts-->
-    <nav class="navbar navbar-expand-lg bg-dark fixed-top">
+    <nav class="navbar navbar-expand-lg bg-dark fixed-top" id="nav-bg">
         <div class="container-lg" data-aos="fade-left"  data-aos-duration="1000" data-aos-once="true">
             <a href="index.html" class="navbar-brand" id="nav-logo">
-                <img src="./assets/PanzerLogo-removebg-preview.png"
+                <img src="./assets/NEWLOGO.png"
                alt="" class="d-inline-block align-text-top">
             </a>
                 <!--This code is the responsive toggling button for mobile devices or the 3 lines navigational button.-->
-                <button class="btn btn-success navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                  </button>
+                <button class="btn btn-success navbar-toggler custom-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+                
 <!--Navigational brand ends-->
 
 <!--Navigational links start here-->
@@ -59,133 +60,8 @@
     </nav>
 
 <!--Portfolio Website starts-->
-    <section id="portfolio" class="gallery my-5 py-5" data-aos="fade-down" data-aos-duration="1000">
-        <div class="container-fluid" id="portcontent">
-            <div class="text-center pb-5 my-5  bg-success" id="PortfolioHead">
-                <h1 class="fw-bold" style="text-decoration: underline rgb(91, 158, 4);">PORTFOLIO</h1>
-                <p class="lead fst-italic fw-bold"
-                style="text-decoration: underline rgb(142, 201, 5);">Top projects | PanzerWeb | Portfolio</p>
-
-            </div>
-
-            <br>
-            <br>
-            <br>
-
-            <p class="lead text-center" id="PortfolioParagraph">
-                Here are some of the top projects created originally by PanzerWeb,
-                this is a memento of his skills as a web developer that will surely
-                input your minds with a success. Take a look carefully with these websites.
-            </p>
-            <!--Row for portfolio and its column-->
-            <div class="row justify-content-around align-text-center gy-2 mt-5">
-          <!--FIRST PORTFOLIO-->
-                <div class="col-lg-5" data-aos="slide-right" data-aos-duration="500" data-aos-once="true">
-                    <img src="./assets/Portfolio/PorfolioSite[0].png" class="gallery-item" 
-                    alt="https://selwynvillar.wixsite.com/aurumdawnesports">
-                </div>
-                <div class="col-lg-6 text-center gy-5 d-none d-lg-block" id="portfolioDesc">
-                  <h4>First Website</h4>
-                  <p style="font-weight: 500;">Created by PanzerWeb using Wix. This is intended to provide transparency
-                    to all who wants to contact him. The website consist of a chatbox, and gallery,
-                    and it is the first ever portfolio website of PanzerWeb.
-                    <a href="#" class="text-warning fw-bold">Visit Now!</a>
-                  </p>
-                </div>
-          <!--SECOND PORTFOLIO-->
-                <div class="col-lg-6 text-center gy-5 d-none d-lg-block" id="portfolioDesc">
-                  <h4>Second Website</h4>
-                  <p style="font-weight: 500;">
-                    The official website of the Aurum Shining Dawn, created by PanzerWeb using 
-                    Wix. It features dynamic visual presentation, the description of the players,
-                    and a community open to all Aurum Fans.
-                    <a href="#" class="text-warning fw-bold">Visit Now!</a>
-                  </p>
-                </div>
-                <div class="col-lg-5" data-aos="slide-left" data-aos-duration="1000" data-aos-once="true">
-                  <img src="./assets/Portfolio/PortfolioSite[1].png" class="gallery-item" alt="">
-              </div>
-          <!--THIRD PORTFOLIO-->
-              <div class="col-lg-5" data-aos="slide-right" data-aos-duration="500" data-aos-once="true">
-                <img src="./assets/Portfolio/PorfolioSite[2].png" class="gallery-item" alt="">
-              </div>
-              <div class="col-lg-6 text-center gy-5 d-none d-lg-block" id="portfolioDesc">
-                <h4>Third Website</h4>
-                <p style="font-weight: 500;">
-                  A login form that features a progress bar developed by PanzerWeb using
-                  basic front-end web components, namely, HTML5, CSS3, and JavaScript.
-                  It also features the showing of password, and gender identification.
-                  <a href="#" class="text-danger fst-italic text-decoration-none">No link provided</a>
-                </p>
-              </div>
-          <!--FOURTH PORTFOLIO-->
-              <div class="col-lg-6 text-center gy-5 d-none d-lg-block" id="portfolioDesc">
-                <h4>Fourth Website</h4>
-                <p style="font-weight: 500;">
-                  The first official one-page landing website of Aurum Shining Dawn. This website
-                  features a basic animation, and other simple design. Overall, it is still not finished.
-                  <a href="#" class="text-danger fst-italic text-decoration-none">No link provided</a>
-
-                </p>
-              </div>
-              <div class="col-lg-5" data-aos="slide-left" data-aos-duration="1000" data-aos-once="true">
-                <img src="./assets/Portfolio/PorfolioSite[3].png" class="gallery-item" alt="">
-              </div>
-          <!--FIFTH PORTFOLIO-->
-            <div class="col-lg-5" data-aos="slide-right" data-aos-duration="500" data-aos-once="true">
-                <img src="./assets/Portfolio/PorfolioSite[4].png" class="gallery-item" alt="">
-            </div>
-            <div class="col-lg-6 text-center gy-5 d-none d-lg-block" id="portfolioDesc">
-                <h4>Fifth Website</h4>
-                <p style="font-weight: 500;">
-                  This website is the first authentic code portfolio website of PanzerWeb.
-                  This features all webpage, a portfolio website must have; a bonus digital
-                  clock is also featured. It is styled with a simple color palette, although
-                  not a very stylish website, this is Panzer's proud work.
-                  <a href="#" class="text-danger fst-italic text-decoration-none">No link provided</a>  
-                </p>
-            </div>
-          <!--SIXTH PORTFOLIO-->
-            <div class="col-lg-6 text-center gy-5 d-none d-lg-block" id="portfolioDesc">
-                <h4>Sixth Website</h4>
-                <p style="font-weight: 500;">
-                  The first Glassmorphism Login Form developed by PanzerWeb. The form features
-                  a Glassmorphism form, an animated background using a GIF, and a password measure.
-                  <a href="#" class="text-danger fst-italic text-decoration-none">No link provided</a>
-
-                </p>
-            </div>
-            <div class="col-lg-5" data-aos="slide-left" data-aos-duration="1000" data-aos-once="true">
-              <img src="./assets/Portfolio/PorfolioSite[5].png" class="gallery-item" alt="">
-          </div> 
-
-              
 
 
-
-        </div>
-            
-    </section>
-
-    <!-- Button trigger modal -->
-  
-  <!-- Modal starts -->
-  <div class="modal fade" id="gallery-modal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-    <div class="modal-dialog modal-dialog-centered modal-lg">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h5 class="modal-title" id="exampleModalLabel">Projects</h5>
-          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-        </div>
-        <div class="modal-body">
-          <img src="./assets/Portfolio/PorfolioSite[0].png" class="modal-img" alt="">
-        </div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-        </div>
-      </div>
-    </div>
-  </div>
 
 <br>
 <br id="questionsec">
