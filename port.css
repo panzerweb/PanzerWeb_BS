@@ -276,4 +276,13 @@ body{
         filter:brightness(80%);
         border: none; 
     }
+    .modal-dialog{
+        max-height: 800px;
+        margin: 8rem 1.5rem;
+    }
+    .modal-content{
+        width: 100%;
+        background: #000000;
+        box-shadow: rgb(8, 192, 2) 0px 0px 10px 5px, rgba(28, 223, 11, 0.65) 0px 4px 10px -1px, rgb(9, 192, 2)0px 1px 0px inset;
+    }
 }
