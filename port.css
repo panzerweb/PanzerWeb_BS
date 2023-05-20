@@ -200,8 +200,11 @@ body{
 
 
 /* modal styling*/
-
+.modal-dialog{
+    max-height: 800px;
+}
 .modal-content{
+    width: 100%;
     background: #000000;
     box-shadow: rgb(8, 192, 2) 0px 0px 10px 5px, rgba(28, 223, 11, 0.65) 0px 4px 10px -1px, rgb(9, 192, 2)0px 1px 0px inset;
 }
