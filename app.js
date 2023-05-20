@@ -43,3 +43,27 @@ document.addEventListener("click", function (e){
         myModal.show();
     }
 })
+
+
+// Get all the filter buttons
+const filterButtons = document.querySelectorAll('.filter-button');
+
+// Get all the image containers
+const imageContainers = document.querySelectorAll('.image-container');
+
+// Add click event listener to each filter button
+filterButtons.forEach(button => {
+  button.addEventListener('click', () => {
+    // Get the selected category from the data attribute
+    const category = button.dataset.category;
+
+    // Filter the image containers based on the selected category
+    imageContainers.forEach(container => {
+      if (category === 'all' || container.dataset.category === category) {
+        container.style.display = 'block'; // Show the container
+      } else {
+        container.style.display = 'none'; // Hide the container
+      }
+    });
+  });
+});

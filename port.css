@@ -30,6 +30,8 @@ body{
 /*Targets the navigational links to hover an underline beneath each webpages.*/
 #nav-bg{
     background: linear-gradient(#000000, #000000) !important;
+    width: 100%;
+    overflow: hidden;
 }
 #nav-logo img{
     object-fit: contain;
@@ -70,35 +72,102 @@ body{
     transform: scaleX(1);
     transform-origin: bottom left;
 }
+#Portfolio-Intro{
+    overflow: hidden;
+    margin: 5rem 0;
+}
 #project-container{
-    margin: 0 5rem;
-    position: relative;
+    overflow-x: hidden;
 }
 #project-container h1{
     font-family: 'Ubuntu', sans-serif;
     color: var(--main-text);
     font-size: 7.594rem;
+    margin-left: 5rem;
 }
+#project-row{
+    width: 100%;
+    height: 100%;
+}
+#portfolio-container{
+    overflow-x: hidden;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 1rem;
+    width: 100%;
+    box-sizing: border-box;
+}
+
 #image-project{
     overflow: hidden;
-    margin: 0.5rem 0;
+    margin: 0.5rem auto;
+    height: 300px;
+    width: 100%;
+    border: 5px solid #080808;
+    box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px, rgba(6, 24, 44, 0.65) 0px 4px 6px -1px, rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
+
 }
 #image-project img{
     width: 100%;
     height: 100%;
     object-fit: cover;
+    filter:brightness(80%);
 }
 #image-project img:hover{
-    transform: scale(1.3);
+    transform: scale(1.2);
     transition: transform 0.5s ease-in-out;
 }
 #image-project img:not(hover){
     transform: scale(1);
     transition: transform 0.5s ease-in-out;
 }
+
+.filters {
+    display: flex;
+    justify-content: center;
+    margin: 5rem auto;
+    width: 50%; 
+}
   
+.filter-button {
+    background-color: rgb(14, 14, 26);
+    border: none;
+    padding: 5px 10px;
+    margin: 0 0.5rem;
+    font-family: 'Ubuntu', sans-serif;
+    cursor: pointer;
+    color: rgb(234, 234, 234);
+    transition: 0.6s;
+    box-shadow: 0px 0px 60px #1f4c65;
+  -webkit-box-reflect: below 10px linear-gradient(to bottom, rgba(0,0,0,0.0), rgba(0,0,0,0.4));
+    border-radius: 50px;
+    transition: 0.5s ease-in-out;
+}
+.filter-button:hover{
+    background: rgb(2,29,78);
+    background: linear-gradient(270deg, rgba(2, 29, 78, 0.681) 0%, rgba(31, 215, 232, 0.873) 60%);
+    color: rgb(4, 4, 38);
+}
+.filter-button.active {
+    background: red; /* Change to the desired active color */
+    color: var(--main-text); /* Change to the desired text color */
+}
+.filter-button.active:hover {
+    background: rgb(2,29,78);
+    background: linear-gradient(270deg, rgba(2, 29, 78, 0.681) 0%, rgba(31, 215, 232, 0.873) 60%);
+    color: rgb(4, 4, 38);
+    transition: 0.5s ease-in-out;
+}
+
 #waifu-col{
     position: relative;
+
+}
+#question-title{
+    color: var(--main-text);
+    font-family: 'Ubuntu', sans-serif;
 }
 #anime-faqs{
     width: 100%;
@@ -108,6 +177,8 @@ body{
 #useful-links p a{
     position: relative;
     transition: 0.5s linear;
+    font-family: 'Roboto Condensed', sans-serif;
+
 }
 
 #useful-links p a:hover{
@@ -122,11 +193,14 @@ body{
 #footer-soc i:hover{
     color: rgb(221, 245, 11);
 }
+#panzerText{
+    color: var(--text-console);
+}
 
 
 
 
-@media only screen and (min-height: 480px) and (max-width: 767px){
+@media only screen and (min-width: 320px) and (max-width: 992px){
     .custom-toggler .navbar-toggler-icon {
         background-color: #28a745;
         padding: 1.5rem;
@@ -148,5 +222,49 @@ body{
     .gallery img{
         margin-top: 0.7rem;
         margin-bottom: 0.7rem;
+    }
+    #Portfolio-Intro{
+        overflow: hidden;
+        margin-top: 5rem;
+        padding: 0;
+    }
+    #project-container h1{
+        font-family: 'Ubuntu', sans-serif;
+        color: var(--main-text);
+        font-size: 4rem;
+        margin: 0 auto;
+        text-align: center;
+    }
+    .filters {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 5rem;
+        width: 50%;      
+    }
+    .filter-button {
+        background-color: rgb(14, 14, 26);
+        border: none;
+        padding: 1rem;
+        margin: 0 0.5rem;
+        border-radius: 0;
+        font-family: 'Ubuntu', sans-serif;
+
+    }
+    #project-row{
+        width: 100%;
+        height: 100%;
+    }
+    #image-project{
+        overflow: hidden;
+        margin: 0.5rem auto;
+        height: 150px;
+        width: 100%;
+    }
+    #image-project img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        filter:brightness(80%);
+        border: none; 
     }
 }

@@ -60,37 +60,53 @@
     </nav>
 
 <!--Portfolio Website starts-->
-      <section class="my-5 py-5" id="Portfolio-Intro">
+      <section id="Portfolio-Intro">
         <div class="container-fluid" id="project-container">
             <h1 class="mt-5">PROJECTS</h1>
         </div>
       </section>
-      <section class="my-5 py-5" id="portfolio-showcase">
-        <div class="container-lg" id="portfolio-container">
-          <div class="row" id="project-row">
-            <div class="col-md-6 col-lg-6">
-              <div class="image-container" id="image-project">
-                <img src="/assets/Portfolio/PorfolioSite[0].png" alt="">
-              </div>
-            </div>
-            <div class="col-md-6 col-lg-6">
-              <div class="image-container" id="image-project">
-                <img src="/assets/Portfolio/PorfolioSite[0].png" alt="">
-              </div>
-            </div> 
-            <div class="col-md-6 col-lg-6">
-              <div class="image-container" id="image-project">
-                <img src="/assets/Portfolio/PorfolioSite[0].png" alt="">
-              </div>
-            </div> 
-            <div class="col-md-6 col-lg-6">
-              <div class="image-container" id="image-project">
-                <img src="/assets/Portfolio/PorfolioSite[0].png" alt="">
-              </div>
-            </div>       
-          </div>
+      <div class="filters">
+        <button class="filter-button active" data-category="all">All</button>
+        <button class="filter-button" data-category="web">Web Development</button>
+        <button class="filter-button" data-category="graphic">Graphic Design</button>
+        <button class="filter-button" data-category="art">Art</button>
+      </div>
+<section id="portfolio-showcase">
+  <div class="container-fluid" id="portfolio-container">
+    <div class="row justify-content-center align-items-center" id="project-row">
+      <div class="col-md-6 col-lg-6">
+        <div class="image-container" data-category="web" id="image-project">
+          <img src="./assets/Portfolio/rsz_1porfoliosite[0].png" alt="">
         </div>
-      </section>
+      </div>
+      <div class="col-md-6 col-lg-6">
+        <div class="image-container" data-category="web" id="image-project">
+          <img src="./assets/Portfolio/rsz_portfoliosite[1].png" alt="">
+        </div>
+      </div> 
+      <div class="col-md-6 col-lg-6">
+        <div class="image-container" data-category="web" id="image-project">
+          <img src="./assets/Portfolio/PorfolioSite[2].png" alt="">
+        </div>
+      </div> 
+      <div class="col-md-6 col-lg-6">
+        <div class="image-container" data-category="web" id="image-project">
+          <img src="./assets/Portfolio/PorfolioSite[3].png" alt="">
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-6">
+        <div class="image-container" data-category="web" id="image-project">
+          <img src="./assets/Portfolio/PorfolioSite[4].png" alt="">
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-6">
+        <div class="image-container" data-category="web" id="image-project">
+          <img src="./assets/Portfolio/PorfolioSite[5].png" alt="">
+        </div>
+      </div>       
+    </div>
+  </div>
+</section>
 
 
 <br>
@@ -98,13 +114,14 @@
 <br>
 
 <!--FAQs SECTION with ACCORDION-->
-  <section id="questions" class="bg-info my-5 py-5" data-aos="flip-up" data-aos-duration="1000" data-aos-once="true">
+  <section id="questions" class="mt-5 py-5" data-aos="flip-up" data-aos-duration="1000" data-aos-once="true">
     <div class="container-lg">
         <div class="row justify-content-between align-items-center">
-            <div class="col-sm-3 col-lg-3" id="waifu-col">
+            <div class="col-sm-12 col-md-12 col-lg-5" id="waifu-col">
                 <img src="./assets/Waifu.gif" alt="" id="anime-faqs">
             </div>
-            <div class="col-sm-3 col-lg-8 fw-bold">
+            <div class="col-sm-12 col-md-12 col-lg-7 fw-bold">
+              <h1 class="text-center" id="question-title">Frequently Asked Questions!</h1>
                 <div class="accordion" id="accordionPanelsStayOpenExample">
                     <div class="accordion-item">
                       <h2 class="accordion-header" id="panelsStayOpen-headingOne">
@@ -112,7 +129,7 @@
                           What is this website all about?
                         </button>
                       </h2>
-                      <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show" aria-labelledby="panelsStayOpen-headingOne">
+                      <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingOne">
                         <div class="accordion-body list-group-item-action list-group-item-dark text-dark">
                           <strong>This website is developed as a portfolio.</strong> 
                           Here you can learn more about me, my recent projects, and my character as a programmer.
@@ -123,7 +140,7 @@
                     </div>
                     <div class="accordion-item">
                       <h2 class="accordion-header" id="panelsStayOpen-headingTwo">
-                        <button class="accordion-button collapsed bg-success text-dark" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false" aria-controls="panelsStayOpen-collapseTwo">
+                        <button class="accordion-button collapsed bg-dark text-light" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false" aria-controls="panelsStayOpen-collapseTwo">
                           What topics am I going to learn?
                         </button>
                       </h2>
@@ -138,7 +155,7 @@
                     </div>
                     <div class="accordion-item">
                       <h2 class="accordion-header" id="panelsStayOpen-headingThree">
-                        <button class="accordion-button collapsed bg-secondary text-dark" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false" aria-controls="panelsStayOpen-collapseThree">
+                        <button class="accordion-button collapsed bg-dark text-light" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false" aria-controls="panelsStayOpen-collapseThree">
                           Is taking this course free?
                         </button>
                       </h2>
@@ -153,12 +170,12 @@
                     </div>
                     <div class="accordion-item">
                         <h2 class="accordion-header" id="panelsStayOpen-headingFour">
-                          <button class="accordion-button collapsed bg-warning text-dark" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseFour" aria-expanded="false" aria-controls="panelsStayOpen-collapseFour">
+                          <button class="accordion-button collapsed bg-dark text-light" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseFour" aria-expanded="false" aria-controls="panelsStayOpen-collapseFour">
                             Can this website really help me become a true web developer?
                           </button>
                         </h2>
                         <div id="panelsStayOpen-collapseFour" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingFour">
-                          <div class="accordion-body list-group-item-action list-group-item-warning">
+                          <div class="accordion-body list-group-item-action list-group-item-danger">
                             <strong>No! It all depends on you.</strong> 
                             No teacher can give you success except for yourself, they only teach you
                             to become something that will lead you to the path of success. Programming
@@ -180,81 +197,86 @@
 
 <!--FOOTER-->
 <footer class="bg-dark text-light mt-5 pt-5 pb-4" data-aos="slide-right" 
-data-aos-once="true" data-aos-duration="500" data-aos-delay="50">
-    <div class="container-lg text-center text-md-left">
-        <div class="row text-md-left">
-            <div class="col-md-4 col-lg-3 col-lg-3 mx-auto mt-3">
-                     <h5 class="text-info fw-bold mb-4">PanzerWeb</h4>
-                <p class="lead-3">
-                    PanzerWeb is created on the 30th of June, year 2022 by Panzer.
-                    The website was created as a Portfolio as well as a site where
-                    you can contact the developer himself. Learn Web Development with Panzer.
-                </p>
+    data-aos-once="true" data-aos-duration="500" data-aos-delay="50">
+        <div class="container-lg text-center text-md-left">
+            <div class="row text-md-left">
+                <div class="col-md-4 col-lg-3 col-lg-3 mx-auto mt-3">
+                         <h5 class="text-info fw-bold mb-4" style="font-family: 'Ubuntu', sans-serif;">PanzerWeb</h4>
+                    <p class="lead-3" style="font-family: 'Roboto Condensed', sans-serif;
+                    ">
+                        PanzerWeb is created on the 30th of June, year 2022 by Panzer.
+                        The website was created as a Portfolio as well as a site where
+                        you can contact the developer himself. Learn Web Development with Panzer.
+                    </p>
+                </div>
+                <div class="col-md-4 col-lg-2 col-lg-2 mx-auto mt-3" id="useful-links">
+                    <h5 class="text-warning fw-bold" style="font-family: 'Ubuntu', sans-serif;">Useful Links</h4>
+                    <p>
+                        <a href="#service" class="link-info">Service</a>
+                    </p>
+                    <p>
+                        <a href="#about-us" class="link-info">About Us</a>
+                    </p>
+                    <p>
+                        <a href="#" class="link-info">Portfolio</a>
+                    </p>
+                    <p>
+                        <a href="#" class="link-info">Terms of Service</a>
+                    </p>
+                    <p>
+                        <a href="#" class="link-info">Privacy Policy</a>
+                    </p>
+                </div>
+                <div class="col-md-4 col-lg-3 col-lg-3 mx-auto mt-3">
+                        <h5 class="text-warning mb-4" style="font-family: 'Ubuntu', sans-serif;">Contacts</h4>                
+                    <p style="font-family: 'Roboto Condensed', sans-serif;
+">
+                        <i class="bi bi-house-door-fill mx-3">Bangoy St. Brgy San Francisco, Panabo City</i>
+                    </p>
+                    <p style="font-family: 'Roboto Condensed', sans-serif;
+">
+                        <i class="bi bi-telephone mx-3">+63 09090774336</i>
+                    </p>
+                    <p style="font-family: 'Roboto Condensed', sans-serif;
+">
+                        <i class="bi bi-envelope mx-3">@selwynvillar@gmail.com</i>
+                    </p>
+                    <p style="font-family: 'Roboto Condensed', sans-serif;
+">
+                        <i class="bi bi-geo-alt-fill mx-3">Davao Del Norte, Philippines</i>
+                    </p>
+                </div>
             </div>
-            <div class="col-md-4 col-lg-2 col-lg-2 mx-auto mt-3" id="useful-links">
-                <h5 class="text-warning fw-bold">Useful Links</h4>
-                <p>
-                    <a href="#service" class="link-info">Service</a>
-                </p>
-                <p>
-                    <a href="#about-us" class="link-info">About Us</a>
-                </p>
-                <p>
-                    <a href="#" class="link-info">Portfolio</a>
-                </p>
-                <p>
-                    <a href="#" class="link-info">Terms of Service</a>
-                </p>
-                <p>
-                    <a href="#" class="link-info">Privacy Policy</a>
-                </p>
-            </div>
-            <div class="col-md-4 col-lg-3 col-lg-3 mx-auto mt-3">
-                    <h5 class="text-warning mb-4">Contacts</h4>                
-                <p>
-                    <i class="bi bi-house-door-fill mx-3">Bangoy St. Brgy San Francisco, Panabo City</i>
-                </p>
-                <p>
-                    <i class="bi bi-telephone mx-3">+63 09090774336</i>
-                </p>
-                <p>
-                    <i class="bi bi-envelope mx-3">@selwynvillar@gmail.com</i>
-                </p>
-                <p>
-                    <i class="bi bi-geo-alt-fill mx-3">Davao Del Norte, Philippines</i>
-                </p>
-            </div>
+
+            <hr class="mb-2">
+
+                <div class="row align-items-center">
+                    <div class="col-md-7 col-lg-8">
+                        <p style="font-family: 'Roboto Condensed', sans-serif;">Copyright &copy;<script>document.write(new Date().getFullYear());</script> All Rights Reserved</p>
+                            <a href="#" class="text-decoration-none">
+                                <strong id="panzerText">PanzerWeb</strong>
+                             </a>
+                    </div>
+
+                    <div class="col-md-5 col-lg-4">
+                        <ul class="list-unstyled list-inline" id="footer-soc">
+                            <li class="list-inline-item">
+                                <a href="#" class="btn-floating btn-sm text-white" style="font-size: 1.8rem;">
+                                    <i class="bi bi-facebook"></i></a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a href="#" class="btn-floating btn-sm text-white" style="font-size: 1.8rem;">
+                                    <i class="bi bi-tiktok"></i></a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a href="#" class="btn-floating btn-sm text-white" style="font-size: 1.8rem;">
+                                    <i class="bi bi-instagram"></i></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
         </div>
-
-        <hr class="mb-2">
-
-            <div class="row align-items-center">
-                <div class="col-md-7 col-lg-8">
-                    <p>Copyright &copy;<script>document.write(new Date().getFullYear());</script> All Rights Reserved</p>
-                        <a href="#" class="text-decoration-none">
-                            <strong>PanzerWeb</strong>
-                         </a>
-                </div>
-
-                <div class="col-md-5 col-lg-4">
-                    <ul class="list-unstyled list-inline" id="footer-soc">
-                        <li class="list-inline-item">
-                            <a href="#" class="btn-floating btn-sm text-white" style="font-size: 1.8rem;">
-                                <i class="bi bi-facebook"></i></a>
-                        </li>
-                        <li class="list-inline-item">
-                            <a href="#" class="btn-floating btn-sm text-white" style="font-size: 1.8rem;">
-                                <i class="bi bi-tiktok"></i></a>
-                        </li>
-                        <li class="list-inline-item">
-                            <a href="#" class="btn-floating btn-sm text-white" style="font-size: 1.8rem;">
-                                <i class="bi bi-instagram"></i></a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-    </div>
-</footer>
+    </footer>
 
 
 
