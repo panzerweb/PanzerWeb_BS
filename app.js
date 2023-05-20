@@ -31,20 +31,42 @@ const setThemeOnInit = () => {
 setThemeOnInit();
 
 
+//FOR MODAL
+document.addEventListener("DOMContentLoaded", function() {
+  // Get all image containers
+  const imageContainers = document.querySelectorAll(".image-container");
+
+  // Get the modal image element
+  const modalImage = document.getElementById("modalImage");
+
+  // Create a new instance of the Bootstrap Modal
+  const modal = new bootstrap.Modal(document.getElementById("exampleModal"));
+
+  // Loop through each image container
+  imageContainers.forEach(function(container) {
+    const img = container.querySelector("img");
+    
+    // Add click event listener to each image
+    img.addEventListener("click", function() {
+      // Set the source of the modal image to the clicked image source
+      modalImage.src = img.src;
+
+      // Show the modal
+      modal.show();
+    });
+  });
+
+  // Add event listener to the modal for when it is completely hidden
+  modal.addEventListener("hidden.bs.modal", function() {
+    // Clear the modal image source when the modal is closed
+    modalImage.src = "";
+  });
+});
 
 
+//* FOR THE FILTERABLE GALLERY
 
-//For portfolio file
-document.addEventListener("click", function (e){
-    if(e.target.classList.contains("gallery-item")){
-        const src = e.target.getAttribute("src");
-        document.querySelector(".modal-img").src = src;
-        const myModal = new bootstrap.Modal(document.getElementById('gallery-modal'));
-        myModal.show();
-    }
-})
-
-
+//! FOR WEB DEVELOPMENT
 // Get all the filter buttons
 const filterButtons = document.querySelectorAll('.filter-button');
 
@@ -59,6 +81,31 @@ filterButtons.forEach(button => {
 
     // Filter the image containers based on the selected category
     imageContainers.forEach(container => {
+      if (category === 'all' || container.dataset.category === category) {
+        container.style.display = 'block'; // Show the container
+      } else {
+        container.style.display = 'none'; // Hide the container
+      }
+    });
+  });
+});
+
+//!FOR GRAPHIC DESIGN
+
+const filterButtons1 = document.querySelectorAll('.filter-button');
+
+// Get all the image containers
+const imageContainers1 = document.querySelectorAll('.image-container1');
+
+
+// Add click event listener to each filter button
+filterButtons1.forEach(button => {
+  button.addEventListener('click', () => {
+    // Get the selected category from the data attribute
+    const category = button.dataset.category;
+
+    // Filter the image containers based on the selected category
+    imageContainers1.forEach(container => {
       if (category === 'all' || container.dataset.category === category) {
         container.style.display = 'block'; // Show the container
       } else {

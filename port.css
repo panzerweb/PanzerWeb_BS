@@ -199,6 +199,16 @@ body{
 }
 
 
+/* modal styling*/
+
+.modal-content{
+    background: #000000;
+    box-shadow: rgb(8, 192, 2) 0px 0px 10px 5px, rgba(28, 223, 11, 0.65) 0px 4px 10px -1px, rgb(9, 192, 2)0px 1px 0px inset;
+}
+#exampleModalLabel{
+    font-family: 'Roboto Condensed', sans-serif;
+    color: var(--text-light);
+}
 
 
 @media only screen and (min-width: 320px) and (max-width: 992px){
