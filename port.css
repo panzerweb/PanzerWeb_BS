@@ -127,6 +127,7 @@ body{
 .filters {
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
     margin: 5rem auto;
     width: 50%; 
 }
@@ -236,19 +237,12 @@ body{
         text-align: center;
     }
     .filters {
-        display: flex;
-        justify-content: center;
-        margin-bottom: 5rem;
-        width: 50%;      
+        flex-wrap: wrap;
     }
-    .filter-button {
-        background-color: rgb(14, 14, 26);
-        border: none;
-        padding: 1rem;
-        margin: 0 0.5rem;
-        border-radius: 0;
-        font-family: 'Ubuntu', sans-serif;
 
+    .filter-button {
+        flex: 0 0 45%; /* Adjust the width as needed */
+        margin: 0.5rem;
     }
     #project-row{
         width: 100%;
