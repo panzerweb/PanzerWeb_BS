@@ -243,6 +243,7 @@ body{
     .filter-button {
         flex: 0 0 45%; /* Adjust the width as needed */
         margin: 0.5rem;
+
     }
     #project-row{
         width: 100%;
