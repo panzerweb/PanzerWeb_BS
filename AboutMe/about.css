@@ -113,12 +113,14 @@ body{
 #about-container h1{
     font-size: 7.594rem;
     color: var(--main-text);
+    font-family: 'Ubuntu', sans-serif;
 }
-#about-container p{
+
+#brief-intro{
     color: var(--main-text);
-    font-size: 1.5rem;
-    text-align: justify;
     text-indent: 6rem;
+    text-align: justify;
+    font-family: 'Ubuntu', sans-serif;
 }
 
 #about-row{
@@ -128,13 +130,19 @@ body{
     text-align: center;
     font-size: 1.2rem;
     color: var(--main-text);
+    font-family: 'Fira Sans Condensed', sans-serif;
+
 }
 #about-skills{
     text-decoration: underline;
     font-style: italic;
+    font-family: 'Fira Sans Condensed', sans-serif;
+    letter-spacing: 2px;
 }
 #author-title{
     text-decoration: underline;
+    font-family: 'Fira Sans Condensed', sans-serif;
+    letter-spacing: 2px;
 }
 #selwyn-pic{
     width: 100%;
@@ -145,4 +153,20 @@ body{
 }
 #social-links i:hover{
     color: var(--text-console);    
+}
+
+#about-paragraph p{
+    text-indent: 3rem;
+    color: var(--main-text);
+    font-size: 1.25rem;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+#mission-container{
+    margin: 1rem;
+}
+#mission-container h1{
+    float: right;
+    color: var(--main-text);
+    font-size: 5.653rem;
 }
