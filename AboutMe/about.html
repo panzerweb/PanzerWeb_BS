@@ -15,15 +15,17 @@
     <title>PanzerWeb | About Me</title>
 </head>
 <body>
-    <!--OFFCANVAS NAVIGATION-->
-    <div class="container-fluid" id="theme-canvas">
-        <div id="offcanvas-btn">
-            <img src="/assets/NEWLOGO.png" alt="" data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBothOptions" aria-controls="offcanvasWithBothOptions">
+    <header>
+        <div class="container-fluid" id="theme-canvas">
+            <div id="offcanvas-btn">
+                <img src="/assets/NEWLOGO.png" alt="" data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBothOptions" aria-controls="offcanvasWithBothOptions">
+            </div>
+            <button id="toggleDay" class="btn btn-warning mx-2 " onclick="toggleTheme()">
+                <i class="bi bi-brightness-high-fill" id="icon"></i>
+            </button>
         </div>
-        <button id="toggleDay" class="btn btn-warning mx-2 " onclick="toggleTheme()">
-            <i class="bi bi-brightness-high-fill" id="icon"></i>
-        </button>
-    </div>
+    </header>
+    <!--OFFCANVAS NAVIGATION-->
    
 
     <div class="offcanvas offcanvas-start" data-bs-scroll="true" tabindex="-1" id="offcanvasWithBothOptions" aria-labelledby="offcanvasWithBothOptionsLabel">
@@ -48,6 +50,46 @@
         </ul>
       </div>
     </div>
+    <!--MAIN BODY-->
+    <main>
+        <section class="mt-5">
+            <div class="container-lg" id="about-container">
+                <h1>About Me</h1>
+                <p>Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur necessitatibus provident autem fugit aperiam quaerat similique officia vero, odit laboriosam? Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur, aperiam.</p>
+
+                <div class="row justify-content-evenly" id="about-row">
+                    <div class="col-lg-5" id="about-left-side">
+                        <img src="/assets/SelwynVillarpassportpic.jpg" alt="" id="selwyn-pic">
+                        <h5 class="mt-3 fs-3" id="FullName">Romeo Selwyn M. Villar</h5>
+                        <h5 id="about-skills">Web Designer | Graphic Designer | Artist</h5>
+                        <h5 id="author-title">Author of this website</h5>
+                        <!--The social link's code are copied from the footer in the main page code-->
+                        <div id="social-links" class="text-center">
+                            <ul class="list-unstyled list-inline" id="footer-soc">
+                                <li class="list-inline-item">
+                                    <a href="https://www.facebook.com/@Helcurt.12345" class="btn-floating btn-sm text-white" style="font-size: 1.8rem;">
+                                        <i class="bi bi-facebook"></i></a>
+                                </li>
+                                <li class="list-inline-item">
+                                    <a href="https://www.tiktok.com/@selwyn_villar" class="btn-floating btn-sm text-white" style="font-size: 1.8rem;">
+                                        <i class="bi bi-tiktok"></i></a>
+                                </li>
+                                <li class="list-inline-item">
+                                    <a href="https://www.instagram.com/r.s_panzer/" class="btn-floating btn-sm text-white" style="font-size: 1.8rem;">
+                                        <i class="bi bi-instagram"></i></a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-7" id="about-paragraph">
+                        <p>Lorem ipsum dolor sit amet. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Minus sint molestias dicta veniam nulla reprehenderit saepe, unde accusantium consectetur cumque tempora velit. Saepe magni ad amet voluptatum itaque accusantium iusto!</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+
 
     <script src="/app.js"></script>
     <!--Bootstrap CDN JavaScript-->

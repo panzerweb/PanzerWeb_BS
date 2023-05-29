@@ -106,3 +106,43 @@ body{
     transform: scale3d(1.1, 1.1, 1.1);
     transition: 0.5s ease-in;
 }
+
+#about-container{
+    margin: auto;
+}
+#about-container h1{
+    font-size: 7.594rem;
+    color: var(--main-text);
+}
+#about-container p{
+    color: var(--main-text);
+    font-size: 1.5rem;
+    text-align: justify;
+    text-indent: 6rem;
+}
+
+#about-row{
+    margin: 5rem auto;
+}
+#about-left-side h5{
+    text-align: center;
+    font-size: 1.2rem;
+    color: var(--main-text);
+}
+#about-skills{
+    text-decoration: underline;
+    font-style: italic;
+}
+#author-title{
+    text-decoration: underline;
+}
+#selwyn-pic{
+    width: 100%;
+}
+
+#social-links i{
+    transition: all 0.3s linear;
+}
+#social-links i:hover{
+    color: var(--text-console);    
+}
