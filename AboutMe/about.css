@@ -108,7 +108,8 @@ body{
 }
 
 #about-container{
-    margin: auto;
+    margin: 0 auto;
+    width: 100%;
 }
 #about-container h1{
     font-size: 7.594rem;
@@ -124,7 +125,9 @@ body{
 }
 
 #about-row{
-    margin: 5rem auto;
+    margin-top: 5rem;
+    margin-left: auto;
+    margin-right: auto;
 }
 #about-left-side h5{
     text-align: center;
@@ -163,10 +166,29 @@ body{
 }
 
 #mission-container{
-    margin: 1rem;
+    width: 100%;
 }
 #mission-container h1{
-    float: right;
     color: var(--main-text);
     font-size: 5.653rem;
+    text-align: right;
 }
+
+.card {
+    width: 100%;
+    margin: 4rem auto;
+    border-radius: 30px;
+    background: #212121;
+    box-shadow: 5px 5px 15px rgb(25, 25, 25),
+                -5px -5px 15px rgb(60, 60, 60);
+}
+
+.card-body{
+    text-align: justify;
+    color: var(--text-light);
+}
+.card-title, .card-subtitle{
+    text-align: center;
+    color: var(--text-light);
+}
+   
