@@ -39,7 +39,9 @@ body{
     background: linear-gradient(rgb(2,100,2), rgb(5,5,5));
     border-bottom-right-radius: 30%;
     border-bottom-left-radius: 30%;
-    position: relative;
+    position: fixed;
+    width: 100%;
+    z-index: 1;
   }
   
 
@@ -110,6 +112,7 @@ body{
 #about-container{
     margin: 0 auto;
     width: 100%;
+    padding-top: 10rem;
 }
 #about-container h1{
     font-size: 7.594rem;
@@ -167,11 +170,13 @@ body{
 
 #mission-container{
     width: 100%;
+    margin-bottom: 15rem;
 }
 #mission-container h1{
     color: var(--main-text);
     font-size: 5.653rem;
     text-align: right;
+    font-family: 'Ubuntu', sans-serif;
 }
 
 #column-card-about{
@@ -200,4 +205,82 @@ body{
     font-family: 'Ubuntu', sans-serif;
     margin-bottom: 1.5rem;
 }
+
+#useful-links p a{
+    position: relative;
+    transition: 0.5s linear;
+    font-family: 'Roboto Condensed', sans-serif;
+
+}
+
+#useful-links p a:hover{
+    text-decoration: none;
+}
+
+#footer-soc i{
+    position: relative;
+    transition: 0.5s linear;
+}
+
+#footer-soc i:hover{
+    color: rgb(221, 245, 11);
+}
+#panzerText{
+    color: var(--text-console);
+}
    
+
+@media only screen and (min-width: 320px) and (max-width: 992px){
+    #about-container h1{
+        font-size: 5.5rem;
+        color: var(--main-text);
+        text-align: center;
+    }
+    #brief-intro{
+        text-indent: 1rem;
+        text-align: justify;
+        font-size: 1.5rem;
+    }
+    #selwyn-pic{
+        width: 100%;
+    }
+    #about-paragraph p{
+        text-indent: 1rem;
+        color: var(--main-text);
+        font-size: 1.25rem;
+        text-align: justify;
+        font-family: 'Roboto Condensed', sans-serif;
+    }
+    #mission-container h1{
+        font-size: 3.653rem;
+        text-align: center;
+        font-family: 'Ubuntu', sans-serif;
+    }
+    #column-card-about{
+        height: 80vh;
+    }
+    
+    .card {
+        width: 100%;
+        margin: 0 auto;
+        border-radius: 30px;
+        background: var(--main-text);
+        box-shadow: 5px 5px 15px rgb(25, 25, 25),
+                    -5px -5px 15px rgb(60, 60, 60);
+    }
+    
+    .card-body{
+        text-align: justify;
+        color: var(--main-bg);
+        font-family: 'Roboto Condensed', sans-serif;
+        font-size: 1rem;
+    
+    }
+    #card-title{
+        text-align: center;
+        color: var(--main-bg);
+        font-size: 3.052rem;
+        font-family: 'Ubuntu', sans-serif;
+        margin-bottom: 1.5rem;
+    }
+}
