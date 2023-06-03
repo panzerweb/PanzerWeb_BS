@@ -33,16 +33,22 @@ body{
     background-color: var(--main-bg);
     background-blend-mode: multiply;
 }
+header {
+    margin: 0;
+    width: 100%;
+    position: fixed;
+    z-index: 1;
+}
+  
 #theme-canvas {
     display: flex;
     align-items: center;
-    background: linear-gradient(rgb(2,100,2), rgb(5,5,5));
+    background: linear-gradient(rgb(2, 100, 2), rgb(5, 5, 5));
     border-bottom-right-radius: 30%;
     border-bottom-left-radius: 30%;
-    position: fixed;
     width: 100%;
-    z-index: 1;
-  }
+}
+  
   
 
 #offcanvas-btn{
