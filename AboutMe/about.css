@@ -237,6 +237,21 @@ header {
    
 
 @media only screen and (min-width: 320px) and (max-width: 992px){
+    header {
+        margin: 0;
+        width: 100%;
+        position: fixed;
+        z-index: 1;
+    }
+      
+    #theme-canvas {
+        display: flex;
+        align-items: center;
+        background: linear-gradient(rgb(2, 100, 2), rgb(5, 5, 5));
+        width: 100%;
+        padding-top: 1.3rem;
+    }
+      
     #about-container h1{
         font-size: 5.5rem;
         color: var(--main-text);
