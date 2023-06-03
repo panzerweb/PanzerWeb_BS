@@ -174,21 +174,30 @@ body{
     text-align: right;
 }
 
+#column-card-about{
+    height: 60vh;
+}
+
 .card {
     width: 100%;
-    margin: 4rem auto;
+    margin: 2rem auto;
     border-radius: 30px;
-    background: #212121;
+    background: var(--main-text);
     box-shadow: 5px 5px 15px rgb(25, 25, 25),
                 -5px -5px 15px rgb(60, 60, 60);
 }
 
 .card-body{
     text-align: justify;
-    color: var(--text-light);
+    color: var(--main-bg);
+    font-family: 'Roboto Condensed', sans-serif;
+
 }
-.card-title, .card-subtitle{
+#card-title{
     text-align: center;
-    color: var(--text-light);
+    color: var(--main-bg);
+    font-size: 3.052rem;
+    font-family: 'Ubuntu', sans-serif;
+    margin-bottom: 1.5rem;
 }
    
