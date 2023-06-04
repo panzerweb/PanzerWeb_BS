@@ -429,6 +429,7 @@ body{
 .carousel-item{
     height: 100vh;
 }
+
     .modal-dialog{
         max-height: 800px;
         margin: 8rem 1.5rem;
