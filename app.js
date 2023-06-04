@@ -64,14 +64,12 @@ document.addEventListener("DOMContentLoaded", function() {
 });
 
 
-//* FOR THE FILTERABLE GALLERY
-
-//! FOR WEB DEVELOPMENT
-// Get all the filter buttons
+/// Get all the filter buttons
 const filterButtons = document.querySelectorAll('.filter-button');
 
-// Get all the image containers
-const imageContainers = document.querySelectorAll('.image-container');
+// Get all the image containers and image labels
+const imageContainers = document.querySelectorAll('.image-container1');
+const imageLabels = document.querySelectorAll('.col-md-6.col-lg-6#image-label');
 
 // Add click event listener to each filter button
 filterButtons.forEach(button => {
@@ -80,22 +78,32 @@ filterButtons.forEach(button => {
     const category = button.dataset.category;
 
     // Filter the image containers based on the selected category
-    imageContainers.forEach(container => {
+    imageContainers.forEach((container, index) => {
+      const imageLabel = imageLabels[index];
+
       if (category === 'all' || container.dataset.category === category) {
         container.style.display = 'block'; // Show the container
+        if (imageLabel) {
+          imageLabel.style.display = 'block'; // Show the image label
+        }
       } else {
         container.style.display = 'none'; // Hide the container
+        if (imageLabel) {
+          imageLabel.style.display = 'none'; // Hide the image label
+        }
       }
     });
   });
 });
 
+
 //!FOR GRAPHIC DESIGN
 
 const filterButtons1 = document.querySelectorAll('.filter-button');
+const graphicTitle = document.getElementById('Graphic-title');
 
 // Get all the image containers
-const imageContainers1 = document.querySelectorAll('.image-container1');
+const imageContainers1 = document.querySelectorAll('.image-container');
 
 
 // Add click event listener to each filter button
@@ -108,9 +116,15 @@ filterButtons1.forEach(button => {
     imageContainers1.forEach(container => {
       if (category === 'all' || container.dataset.category === category) {
         container.style.display = 'block'; // Show the container
+        graphicTitle.style.display = 'block';
+        if(category === "graphic"){
+          graphicTitle.style.display = 'block';
+        }
       } else {
         container.style.display = 'none'; // Hide the container
+        graphicTitle.style.display = 'none'
       }
     });
   });
 });
+

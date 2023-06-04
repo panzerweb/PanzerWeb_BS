@@ -116,7 +116,7 @@ body{
     filter:brightness(80%);
 }
 #image-project img:hover{
-    transform: scale(1.2);
+    transform: scale(1.1);
     transition: transform 0.5s ease-in-out;
 }
 #image-project img:not(hover){
@@ -124,6 +124,77 @@ body{
     transition: transform 0.5s ease-in-out;
 }
 
+
+#image-label{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+#image-label p{
+    text-align: justify;
+    color: var(--main-text);
+    font-family: 'Ubuntu', sans-serif;
+    margin-bottom: 1.5rem;
+}
+.button-container {
+    display: flex;
+    justify-content: center;
+    gap: 10px; /* Adjust the gap between buttons as needed */
+    font-family: 'Roboto Condensed', sans-serif;
+
+}
+
+.link-button{
+    font-size: 17px;
+    border: none;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+    padding: 1em 1.5em;
+    color: var(--main-text);
+    text-transform: uppercase;
+    position: relative;
+    transition: .5s ease;
+    background: transparent;
+}
+.link-button::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 2px;
+    width: 0;
+    background-color: #ffc506;
+    transition: .5s ease;
+  }
+  
+.link-button:hover {
+    color: #1e1e2b;
+    transition-delay: .5s;
+  }
+  
+.link-button:hover::before {
+    width: 100%;
+  }
+  
+.link-button::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 0;
+    width: 100%;
+    background-color: #ffc506;
+    transition: .4s ease;
+    z-index: -1;
+}
+  
+.link-button.link-button:hover::after {
+    height: 100%;
+    transition-delay: 0.4s;
+    color: aliceblue;
+}
+
+/*----------------------------------------------------*/
 .filters {
     display: flex;
     justify-content: center;
@@ -160,6 +231,13 @@ body{
     background: linear-gradient(270deg, rgba(2, 29, 78, 0.681) 0%, rgba(31, 215, 232, 0.873) 60%);
     color: rgb(4, 4, 38);
     transition: 0.5s ease-in-out;
+}
+
+#Graphic-title{
+    text-align: center;
+    font-size: 5rem;
+    font-family: 'Ubuntu', sans-serif;
+    color: var(--main-text);
 }
 
 #waifu-col{
@@ -276,6 +354,18 @@ body{
         filter:brightness(80%);
         border: none; 
     }
+    .col-md-6.col-lg-6 {
+        display: flex;
+        flex-direction: column;
+      }
+      
+      #image-project:nth-child(2) {
+        order: 2;
+      }
+      
+      .image-label {
+        order: 1;
+      }
     .modal-dialog{
         max-height: 800px;
         margin: 8rem 1.5rem;
