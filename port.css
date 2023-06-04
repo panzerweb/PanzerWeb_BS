@@ -99,11 +99,23 @@ body{
     width: 100%;
     box-sizing: border-box;
 }
-
+#carouselExampleCaptions {
+    width: 100%;
+    max-width: 1200px; /* Adjust the desired maximum width */
+    margin: 0 auto;
+  }
+  
+#carouselExampleCaptions .carousel-inner {
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+    object-fit: contain;
+  }
+  
 #image-project{
     overflow: hidden;
     margin: 0.5rem auto;
-    height: 300px;
+    height: 100%;
     width: 100%;
     border: 5px solid #080808;
     box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px, rgba(6, 24, 44, 0.65) 0px 4px 6px -1px, rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
@@ -142,19 +154,18 @@ body{
     justify-content: center;
     gap: 10px; /* Adjust the gap between buttons as needed */
     font-family: 'Roboto Condensed', sans-serif;
-
 }
 
 .link-button{
-    font-size: 17px;
+    font-size: 1rem;
     border: none;
-    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
-    padding: 1em 1.5em;
-    color: var(--main-text);
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;    padding: 1em 1.5em;
+    color: var(--text-light);
     text-transform: uppercase;
     position: relative;
     transition: .5s ease;
-    background: transparent;
+    z-index: 1;
+    background: black;
 }
 .link-button::before {
     content: '';

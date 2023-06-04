@@ -64,12 +64,11 @@ document.addEventListener("DOMContentLoaded", function() {
 });
 
 
-/// Get all the filter buttons
+// Get all the filter buttons
 const filterButtons = document.querySelectorAll('.filter-button');
 
-// Get all the image containers and image labels
-const imageContainers = document.querySelectorAll('.image-container1');
-const imageLabels = document.querySelectorAll('.col-md-6.col-lg-6#image-label');
+// Get the carousel element
+const carousel = document.getElementById('carouselExampleCaptions');
 
 // Add click event listener to each filter button
 filterButtons.forEach(button => {
@@ -78,21 +77,22 @@ filterButtons.forEach(button => {
     const category = button.dataset.category;
 
     // Filter the image containers based on the selected category
-    imageContainers.forEach((container, index) => {
-      const imageLabel = imageLabels[index];
+    const imageContainers = document.querySelectorAll('.image-container1');
 
+    imageContainers.forEach(container => {
       if (category === 'all' || container.dataset.category === category) {
         container.style.display = 'block'; // Show the container
-        if (imageLabel) {
-          imageLabel.style.display = 'block'; // Show the image label
-        }
       } else {
         container.style.display = 'none'; // Hide the container
-        if (imageLabel) {
-          imageLabel.style.display = 'none'; // Hide the image label
-        }
       }
     });
+
+    // Show or hide the carousel based on the selected category
+    if (category === 'web' || category === 'all') {
+      carousel.style.display = 'block'; // Show the carousel
+    } else {
+      carousel.style.display = 'none'; // Hide the carousel
+    }
   });
 });
 
