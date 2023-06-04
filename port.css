@@ -196,6 +196,19 @@ body{
     z-index: 1;
     background: black;
 }
+.link-button a{
+    font-size: 1rem;
+    border: none;
+    color: var(--text-light);
+    text-transform: uppercase;
+    position: relative;
+    transition: .5s ease;
+    z-index: 1;
+    text-decoration: none;
+}
+.link-button a:hover{
+    color: #1e1e2b;
+}
 .link-button::before {
     content: '';
     position: absolute;
