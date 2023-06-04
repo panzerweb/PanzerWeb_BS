@@ -67,8 +67,6 @@ document.addEventListener("DOMContentLoaded", function() {
 // Get all the filter buttons
 const filterButtons = document.querySelectorAll('.filter-button');
 
-// Get the carousel element
-const carousel = document.getElementById('carouselExampleCaptions');
 
 // Add click event listener to each filter button
 filterButtons.forEach(button => {
@@ -88,11 +86,6 @@ filterButtons.forEach(button => {
     });
 
     // Show or hide the carousel based on the selected category
-    if (category === 'web' || category === 'all') {
-      carousel.style.display = 'block'; // Show the carousel
-    } else {
-      carousel.style.display = 'none'; // Hide the carousel
-    }
   });
 });
 
