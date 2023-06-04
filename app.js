@@ -126,6 +126,7 @@ filterButtons1.forEach(button => {
         graphicTitle.style.display = 'block';
         if(category === "graphic"){
           graphicTitle.style.display = 'block';
+          graphicTitle.style.margin = '0';
         }
       } else {
         container.style.display = 'none'; // Hide the container
