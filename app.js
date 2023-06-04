@@ -123,10 +123,11 @@ filterButtons1.forEach(button => {
     imageContainers1.forEach(container => {
       if (category === 'all' || container.dataset.category === category) {
         container.style.display = 'block'; // Show the container
-        graphicTitle.style.display = 'block';
+          graphicTitle.style.display = 'block';
+          graphicTitle.style.marginTop = '5rem';
         if(category === "graphic"){
           graphicTitle.style.display = 'block';
-          graphicTitle.style.margin = '0';
+          graphicTitle.style.marginTop = '0';
         }
       } else {
         container.style.display = 'none'; // Hide the container
