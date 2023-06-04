@@ -388,6 +388,20 @@ body{
         filter:brightness(80%);
         border: none; 
     }
+    #image-projectGraph{
+        overflow: hidden;
+        margin: 0.5rem auto;
+        height: 150px;
+        width: 100%;
+    
+    }
+    #image-projectGraph img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        filter:brightness(80%);
+        border: none;
+    }
     .col-md-6.col-lg-6 {
         display: flex;
         flex-direction: column;
