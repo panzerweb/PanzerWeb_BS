@@ -64,28 +64,42 @@ document.addEventListener("DOMContentLoaded", function() {
 });
 
 
-// Get all the filter buttons
+//! Get all the filter buttons
+// Select all elements with the class "filter-button"
 const filterButtons = document.querySelectorAll('.filter-button');
 
+// Select all elements with the class "image-container1"
+const imageContainers = document.querySelectorAll('.image-container1');
 
-// Add click event listener to each filter button
+// Add a click event listener to each filter button
 filterButtons.forEach(button => {
   button.addEventListener('click', () => {
-    // Get the selected category from the data attribute
+    // Get the selected category from the data attribute of the clicked button
     const category = button.dataset.category;
-
-    // Filter the image containers based on the selected category
-    const imageContainers = document.querySelectorAll('.image-container1');
-
+    
+    // Iterate over each image container
     imageContainers.forEach(container => {
-      if (category === 'all' || container.dataset.category === category) {
-        container.style.display = 'block'; // Show the container
+      // Get the category of the current image container from its data attribute
+      const containerCategory = container.dataset.category;
+      
+      // Get the next sibling element of the image container, which is the button container
+      const buttonContainer = container.nextElementSibling;
+      
+      // Check if the category of the current image container matches the selected category or if "all" is selected
+      if (category === 'all' || containerCategory === category) {
+        // Show the current image container
+        container.style.display = 'block';
+        
+        // Remove the "hidden" class from the button container to make it visible
+        buttonContainer.classList.remove('hidden');
       } else {
-        container.style.display = 'none'; // Hide the container
+        // Hide the current image container
+        container.style.display = 'none';
+        
+        // Add the "hidden" class to the button container to hide it
+        buttonContainer.classList.add('hidden');
       }
     });
-
-    // Show or hide the carousel based on the selected category
   });
 });
 
