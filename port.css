@@ -105,12 +105,19 @@ body{
     margin: 0 auto;
   }
   
-#carouselExampleCaptions .carousel-inner {
+#carouselExampleCaptions {
     width: 100%;
     height: auto;
     object-fit: contain;
   }
+
+  .carousel-inner{
+    height: 80vh;
+  }
   
+.carousel-item{
+    height: 80vh;
+}
 #image-project{
     overflow: hidden;
     margin: 0.5rem auto;
@@ -400,20 +407,15 @@ body{
         height: 100%;
         object-fit: cover;
         filter:brightness(80%);
-        border: none;
     }
-    .col-md-6.col-lg-6 {
-        display: flex;
-        flex-direction: column;
-      }
+.carousel-inner{
+        height: 30vh;
+}
       
-      #image-project:nth-child(2) {
-        order: 2;
-      }
       
-      .image-label {
-        order: 1;
-      }
+.carousel-item{
+    height: 100vh;
+}
     .modal-dialog{
         max-height: 800px;
         margin: 8rem 1.5rem;
