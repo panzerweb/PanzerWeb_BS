@@ -57,7 +57,7 @@ document.addEventListener("DOMContentLoaded", function() {
   });
 
   // Add event listener to the modal for when it is completely hidden
-  modal.addEventListener("hidden.bs.modal", function() {
+  modalImage.addEventListener("hidden.bs.modal", function() {
     // Clear the modal image source when the modal is closed
     modalImage.src = "";
   });
