@@ -106,43 +106,40 @@ filterButtons.forEach(button => {
 
 //!FOR GRAPHIC DESIGN
 
-const filterButtons1 = document.querySelectorAll('.filter-button');
-const graphicTitle = document.getElementById('Graphic-title');
-const artTitle = document.getElementById('art-title');
-// Get all the image containers
-const imageContainers1 = document.querySelectorAll('.image-container');
+document.addEventListener('DOMContentLoaded', () => {
+  const filterButtons = document.querySelectorAll('.filter-button');
+  const graphicTitle = document.getElementById('Graphic-title');
+  const artTitle = document.getElementById('art-title');
+  const imageContainers = document.querySelectorAll('.image-container');
 
+  filterButtons.forEach(button => {
+    button.addEventListener('click', () => {
+      const category = button.dataset.category;
 
-
-// Add click event listener to each filter button
-filterButtons1.forEach(button => {
-  button.addEventListener('click', () => {
-    // Get the selected category from the data attribute
-    const category = button.dataset.category;
-
-    // Filter the image containers based on the selected category
-    imageContainers1.forEach(container => {
-      if (category === 'all' || container.dataset.category === category) {
-        container.style.display = 'block'; // Show the container
+      imageContainers.forEach(container => {
+        if (category === 'all' || container.dataset.category === category) {
+          container.style.display = 'block';
           graphicTitle.style.display = 'block';
           graphicTitle.style.marginTop = '5rem';
-          artTitle.style.marginTop = '5rem';
-        if(category === "graphic"){
-          graphicTitle.style.display = 'block';
-          graphicTitle.style.marginTop = '0';
-        }
-        if(category === 'art'){
-          graphicTitle.style.display = 'none';
-          artTitle.style.marginTop = '0';
           artTitle.style.display = 'block';
+          artTitle.style.marginTop = '5rem';
+
+          if (category === 'graphic') {
+            graphicTitle.style.marginTop = '0';
+          }
+
+          if (category === 'art') {
+            graphicTitle.style.display = 'none';
+            artTitle.style.marginTop = '0';
+          }
+        } else {
+          container.style.display = 'none';
+          artTitle.style.display = 'none';
+          if (category !== 'graphic') {
+            graphicTitle.style.display = 'none';
+          }
         }
-      } else {
-        container.style.display = 'none'; // Hide the container
-        artTitle.style.display = 'none';
-      }
+      });
     });
   });
 });
-
-
-
