@@ -108,9 +108,10 @@ filterButtons.forEach(button => {
 
 const filterButtons1 = document.querySelectorAll('.filter-button');
 const graphicTitle = document.getElementById('Graphic-title');
-
+const artTitle = document.getElementById('art-title');
 // Get all the image containers
 const imageContainers1 = document.querySelectorAll('.image-container');
+
 
 
 // Add click event listener to each filter button
@@ -125,15 +126,23 @@ filterButtons1.forEach(button => {
         container.style.display = 'block'; // Show the container
           graphicTitle.style.display = 'block';
           graphicTitle.style.marginTop = '5rem';
+          artTitle.style.marginTop = '5rem';
         if(category === "graphic"){
           graphicTitle.style.display = 'block';
           graphicTitle.style.marginTop = '0';
         }
+        if(category === 'art'){
+          graphicTitle.style.display = 'none';
+          artTitle.style.marginTop = '0';
+          artTitle.style.display = 'block';
+        }
       } else {
         container.style.display = 'none'; // Hide the container
-        graphicTitle.style.display = 'none'
+        artTitle.style.display = 'none';
       }
     });
   });
 });
+
+
 
