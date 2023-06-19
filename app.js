@@ -106,17 +106,16 @@ filterButtons.forEach(button => {
 
 //!FOR GRAPHIC DESIGN
 
-document.addEventListener('DOMContentLoaded', () => {
-  const filterButtons = document.querySelectorAll('.filter-button');
+  const filterButtons1 = document.querySelectorAll('.filter-button');
   const graphicTitle = document.getElementById('Graphic-title');
   const artTitle = document.getElementById('art-title');
-  const imageContainers = document.querySelectorAll('.image-container');
+  const imageContainers1 = document.querySelectorAll('.image-container');
 
-  filterButtons.forEach(button => {
+  filterButtons1.forEach(button => {
     button.addEventListener('click', () => {
       const category = button.dataset.category;
 
-      imageContainers.forEach(container => {
+      imageContainers1.forEach(container => {
         if (category === 'all' || container.dataset.category === category) {
           container.style.display = 'block';
           graphicTitle.style.display = 'block';
@@ -142,4 +141,4 @@ document.addEventListener('DOMContentLoaded', () => {
       });
     });
   });
-});
+
