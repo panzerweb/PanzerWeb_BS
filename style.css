@@ -508,11 +508,15 @@ background: linear-gradient(rgb(62, 63, 61), rgb(21, 22, 21));*/
     }
     
     #column-card-text{
-        height: 100vh;
+        height: 100%;
     }
     #toggleDay{
         margin: 5px auto;
     }
 }
 
-
+@media only screen and (min-width: 768px) and (max-width: 1440px){
+    #column-card-text{
+        height: 60vh;
+    }
+}
