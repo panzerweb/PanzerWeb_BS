@@ -215,6 +215,7 @@ background: linear-gradient(rgb(62, 63, 61), rgb(21, 22, 21));*/
     transform-origin: bottom left;
 }
 
+
 /**Targets the navigational links to hover an underline beneath each webpages. ENDS*/
 
 /*Line 100 for the Card Section in HTML*/
@@ -456,8 +457,11 @@ background: linear-gradient(rgb(62, 63, 61), rgb(21, 22, 21));*/
 
 /* Targets paragraph and image to be responsive, go to index.html line 61, and line 70*/
 @media only screen and (min-width: 320px) and (max-width: 992px){
+    .navbar-toggler{
+        padding: 0;
+    }
     .custom-toggler .navbar-toggler-icon {
-        background-color: #28a745;
+        background-color: #198754;
         padding: 1.5rem;
         border-radius: 5px;
       }
