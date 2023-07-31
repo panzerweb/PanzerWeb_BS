@@ -99,6 +99,7 @@ body{
     width: 100%;
     box-sizing: border-box;
 }
+/*!---------------------------------------------*/
 #image-project{
     overflow: hidden;
     margin: 0.5rem auto;
@@ -115,7 +116,6 @@ body{
     width: 100%;
     border: 5px solid #080808;
     box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px, rgba(6, 24, 44, 0.65) 0px 4px 6px -1px, rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
-
 }
 #image-projectGraph img{
     width: 100%;
@@ -145,19 +145,21 @@ body{
     transform: scale(1);
     transition: transform 0.5s ease-in-out;
 }
-#find-more-col a{
-    color: var(--main-text);
-    transition: all 0.3s linear;
+#image-project-arts{
+    overflow: hidden;
+    margin: 0.5rem auto;
+    height: 400px;
+    width: 100%;
+    border: 5px solid #080808;
+    box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px, rgba(6, 24, 44, 0.65) 0px 4px 6px -1px, rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
 }
-#find-more-col h1{
-    font-size: 1.5rem;
-    color: var(--main-text);
-    transition: all 0.3s linear;
+#image-project-arts img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter:brightness(80%);
 }
-#find-more-col a:hover{
-    color: var(--text-console);
-}
-
+/*!-----------------------------------------------------------*/
 
 .button-container {
     display: flex;
@@ -280,7 +282,7 @@ body{
 }
 #art-title{
     text-align: center;
-    font-size: 5rem;
+    font-size: 2rem;
     font-family: 'Ubuntu', sans-serif;
     color: var(--main-text);
     margin-top: 5rem;
@@ -414,6 +416,20 @@ body{
     
     }
     #image-projectGraph img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        filter:brightness(80%);
+    }
+    #image-project-arts{
+        overflow: hidden;
+        margin: 0.5rem auto;
+        height: 400px;
+        width: 100%;
+        border: 5px solid #080808;
+        box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px, rgba(6, 24, 44, 0.65) 0px 4px 6px -1px, rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
+    }
+    #image-project-arts img{
         width: 100%;
         height: 100%;
         object-fit: cover;

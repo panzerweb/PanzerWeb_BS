@@ -335,7 +335,7 @@ background: linear-gradient(rgb(62, 63, 61), rgb(21, 22, 21));*/
 }
 
 #column-card-text{
-    height: 80vh;
+    height: 100%;
     font-family: 'Roboto Condensed', sans-serif;
 
 }
@@ -517,6 +517,6 @@ background: linear-gradient(rgb(62, 63, 61), rgb(21, 22, 21));*/
 
 @media only screen and (min-width: 768px) and (max-width: 1440px){
     #column-card-text{
-        height: 60vh;
+        height: 80vh;
     }
 }
