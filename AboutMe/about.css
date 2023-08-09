@@ -17,15 +17,15 @@
 }
 /*Root variable color for our dark theme toggler*/
 :root {
-    --main-bg: rgb(255, 255, 255);
-    --main-text: #161815;
+    --main-bg: #FFE3D8;
+    --main-text: #0e0a0a;
     --text-light: #fff;
     --text-console: #38b000;
 }
 
 [data-theme="dark"] {
-    --main-bg: #080808;
-    --main-text: rgb(250, 250, 250);
+    --main-bg: #0e0a0a;
+    --main-text: #BB86FC;
 }
 
 body{
